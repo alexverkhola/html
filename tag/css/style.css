@@ -1,0 +1,562 @@
+header{
+	height: 70px;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #20b2aa;
+
+}
+nav{
+
+
+}
+ul{
+
+	left: 10px;
+	top: 20px;
+	bottom: 20px;
+	position: fixed;
+	width: 8%;
+
+	font-size: 12 em;
+	height: 100%;
+}
+
+
+a{
+	text-decoration: none;
+	font-size: 12pt;
+}
+
+h2{
+	text-align: center;
+}
+
+body{
+	position: absolute;
+
+
+	background: #20b2aa;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12pt;
+
+	top: 70px;
+
+	padding-left: 10em;
+	padding-right: 10em;
+
+
+}
+
+article{
+
+}
+
+
+#div1{
+
+	position: fixed;
+	top: 70px;
+	bottom: 40px;
+
+	overflow: auto;
+
+
+}
+
+#find input[type="text"]{
+
+	position: fixed;
+	top: 20px;
+	right: 40px;
+
+	border-radius:5px;
+	border: 1px solid transparent;
+
+}
+
+li{
+	list-style-type: none;
+
+}
+
+footer{
+
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	background: #20b2aa;
+
+}
+
+#up, #down{
+	font-size: 20pt;
+}
+
+
+.snowflake1{
+	position: fixed;
+	top:0%;
+	left:10%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake1-animation 20s infinite;
+}
+
+@-webkit-keyframes snowflake1-animation{
+
+	from{
+		top: -5%;
+		left: 10%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 10%;
+		visibility: visible;
+	}
+
+}
+
+.snowflake2{
+	position: fixed;
+	top:-5%;
+	left:20%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake2-animation 22s infinite;
+}
+
+@-webkit-keyframes snowflake2-animation{
+
+
+
+	10%{
+		top: -5%;
+		left: 20%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 20%;
+		visibility: visible;
+	}
+
+}
+
+.snowflake3{
+	position: fixed;
+	top:0%;
+	left:30%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake3-animation 20s infinite;
+}
+
+@-webkit-keyframes snowflake3-animation{
+
+	from{
+		top: -5%;
+		left: 30%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 30%;
+	}
+}
+
+.snowflake4{
+	position: fixed;
+	top:-5%;
+	left:40%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake4-animation 24s infinite;
+}
+
+@-webkit-keyframes snowflake4-animation{
+
+	20%{
+		top: -5%;
+		left: 40%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 40%;
+	}
+}
+
+.snowflake5{
+	position: fixed;
+	top:-5%;
+	left:50%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake5-animation 21s infinite;
+}
+
+@-webkit-keyframes snowflake5-animation{
+
+	5%{
+		top: -5%;
+		left: 50%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 50%;
+	}
+}
+
+.snowflake6{
+	position: fixed;
+	top:-5%;
+	left:60%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake6-animation 20s infinite;
+}
+
+@-webkit-keyframes snowflake6-animation{
+
+	from{
+		top: -5%;
+		left: 60%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 60%;
+	}
+}
+
+.snowflake7{
+	position: fixed;
+	top:-5%;
+	left:70%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake7-animation 22s infinite;
+}
+
+@-webkit-keyframes snowflake7-animation{
+
+	10%{
+		top: -5%;
+		left: 70%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 70%;
+	}
+}
+
+.snowflake8{
+	position: fixed;
+	top:-5%;
+	left:80%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake8-animation 20s infinite;
+}
+
+@-webkit-keyframes snowflake8-animation{
+
+	from{
+		top: -5%;
+		left: 80%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 80%;
+	}
+}
+
+.snowflake9{
+	position: fixed;
+	top:-5%;
+	left:90%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake9-animation 24s infinite;
+}
+
+@-webkit-keyframes snowflake9-animation{
+
+	20%{
+		top: -5%;
+		left: 90%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 90%;
+	}
+}
+
+.snowflake10{
+	position: fixed;
+	top:-5%;
+	left:15%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake10-animation 26s infinite;
+}
+
+@-webkit-keyframes snowflake10-animation{
+
+	30%{
+		top: -5%;
+		left: 15%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 15%;
+		visibility: visible;
+	}
+
+}
+
+.snowflake11{
+	position: fixed;
+	top:-5%;
+	left:25%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflak11-animation 30s infinite;
+}
+
+@-webkit-keyframes snowflake11-animation{
+
+
+
+	40%{
+		top: -5%;
+		left: 25%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 25%;
+		visibility: visible;
+	}
+
+}
+
+.snowflake12{
+	position: fixed;
+	top:0%;
+	left:35%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake12-animation 30s infinite;
+}
+
+@-webkit-keyframes snowflake12-animation{
+
+	from{
+		top: -5%;
+		left: 35%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 30%;
+	}
+}
+
+.snowflake13{
+	position: fixed;
+	top:-5%;
+	left:40%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake13-animation 24s infinite;
+}
+
+@-webkit-keyframes snowflake13-animation{
+
+	20%{
+		top: -5%;
+		left: 40%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 40%;
+	}
+}
+
+.snowflake14{
+	position: fixed;
+	top:-5%;
+	left:55%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake14-animation 24s infinite;
+}
+
+@-webkit-keyframes snowflake14-animation{
+
+	5%{
+		top: -5%;
+		left: 55%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 50%;
+	}
+}
+
+.snowflake15{
+	position: fixed;
+	top:-5%;
+	left:65%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake15-animation 30s infinite;
+}
+
+@-webkit-keyframes snowflake15-animation{
+
+	from{
+		top: -5%;
+		left: 65%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 65%;
+	}
+}
+
+.snowflake16{
+	position: fixed;
+	top:-5%;
+	left:75%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake16-animation 27s infinite;
+}
+
+@-webkit-keyframes snowflake16-animation{
+
+	10%{
+		top: -5%;
+		left: 75%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 75%;
+	}
+}
+
+.snowflake17{
+	position: fixed;
+	top:-5%;
+	left:85%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake17-animation 26s infinite;
+}
+
+@-webkit-keyframes snowflake17-animation{
+
+	from{
+		top: -5%;
+		left: 85%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 85%;
+	}
+}
+
+.snowflake18{
+	position: fixed;
+	top:-5%;
+	left:95%;
+
+	visibility: hidden;
+
+	-webkit-animation: snowflake18-animation 22s infinite;
+}
+
+@-webkit-keyframes snowflake18-animation{
+
+	20%{
+		top: -5%;
+		left: 95%;
+		visibility: visible;
+
+	}
+
+	to{
+		top: 100%;
+		left: 95%;
+	}
+}
