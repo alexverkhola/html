@@ -12,17 +12,7 @@ nav{
 
 
 }
-ul{
 
-	left: 10px;
-	top: 20px;
-	bottom: 20px;
-	position: fixed;
-	width: 8%;
-
-	font-size: 12 em;
-	height: 100%;
-}
 
 
 a{
@@ -54,7 +44,26 @@ article{
 
 }
 
+.nav_ul{
 
+	left: 10px;
+	top: 20px;
+	bottom: 20px;
+	position: fixed;
+	width: 8%;
+
+	font-size: 12 em;
+	height: 100%;
+}
+
+.fast_find{
+	position: static;
+}
+
+.fast_find_li{
+	display: inline;
+	margin-right: 20px;
+}
 #div1{
 
 	position: fixed;
