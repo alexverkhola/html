@@ -54,51 +54,65 @@
 	<article>
 	<div id="div1">
 		<a id="Up"></a>
-		<p><a id="A"></a>A</p>
+		<p><a id="A"></a>A
+
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#a">&lt;a&gt;</a></li>
+				<li class="fast_find_li"><a href="#abbr">&lt;abbr&gt;</a></li>
+				<li class="fast_find_li"><a href="#acronym"><del>&lt;acronym&gt;</del></a></li>
+				<li class="fast_find_li"><a href="#address">&lt;address&gt;</a></li>
+				<li class="fast_find_li"><a href="#applet"><del>&lt;applet&gt;</del></a></li>
+				<li class="fast_find_li"><a href="#area">&lt;area&gt;</a></li>
+				<li class="fast_find_li"><a href="#article">&lt;article&gt;</a></li>
+				<li class="fast_find_li"><a href="#aside">&lt;aside&gt;</a></li>
+				<li class="fast_find_li"><a href="#audio">&lt;audio&gt;</a></li>
+			</ul>
+
+		</p>
 
 			<blockquote><a id="a" href="http://htmlbook.ru/html/a" target="_blank">&lt;a&gt;</a> - предназначен для создания ссылок.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/abbr" target="_blank">&lt;abbr&gt;</a> -  указывает, что последовательность символов является аббревиатурой. С помощью атрибута title дается расшифровка сокращения, что позволяет понимать аббревиатуру тем людям, которые с ней не знакомы.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/acronym" target="_blank">&lt;acronym&gt;</a> - указывает на то, что текст является акронимом. В отличие от аббревиатуры, акроним — это устоявшееся сокращение, которое применяется как самостоятельное слово. К акронимам, например, можно отнести следующие слова: ликбез, замполит, США, DOS и др.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/address" target="_blank">&lt;address&gt;</a> - предназначен для хранения информации об авторе и может включать в себя любые элементы HTML вроде ссылок, текста, выделений и т.д.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/applet" target="_blank">&lt;applet&gt;</a> - предназначен для вставки на страницу апплетов — небольших программ, написанных на языке Java. Этот тег является устаревшим, взамен необходимо использовать более гибкий тег <a href="#object">&lt;object&gt;</a>.</blockquote>
-			<blockquote><a id="area" href="http://htmlbook.ru/html/area" target="_blank">&lt;area&gt;</a> - определяет активные области изображения, которые являются ссылками. Рисунок с привязанными к нему активными областями называется в совокупности картой-изображением.  Этот тег всегда располагается в контейнере &lt;map&gt;, который связывает координаты областей с изображением.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/article" target="_blank">&lt;article&gt;</a> - задает содержание сайта вроде новости, статьи, записи блога, форума или др.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/aside" target="_blank">&lt;aside&gt;</a> - oпределяет блок сбоку от контента для размещения рубрик, ссылок на архив, меток и другой информации.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/audio" target="_blank">&lt;audio&gt;</a> - добавляет, воспроизводит и управляет настройками аудиозаписи на веб-странице.</blockquote>
+			<blockquote><a id="abbr" href="http://htmlbook.ru/html/abbr" target="_blank">&lt;abbr&gt;</a> -  указывает, что последовательность символов является аббревиатурой. С помощью атрибута title дается расшифровка сокращения, что позволяет понимать аббревиатуру тем людям, которые с ней не знакомы.</blockquote>
+			<blockquote><a id="acronym" href="http://htmlbook.ru/html/acronym" target="_blank"><del>&lt;acronym&gt;</del></a> - указывает на то, что текст является акронимом. В отличие от аббревиатуры, акроним — это устоявшееся сокращение, которое применяется как самостоятельное слово. К акронимам, например, можно отнести следующие слова: ликбез, замполит, США, DOS и др. Тег устаревший, используйте вместо него <a href="#abbr">&lt;abbr&gt;</a></blockquote>
+			<blockquote><a id="address" href="http://htmlbook.ru/html/address" target="_blank">&lt;address&gt;</a> - предназначен для хранения информации об авторе и может включать в себя любые элементы HTML вроде ссылок, текста, выделений и т.д.</blockquote>
+			<blockquote><a id="applett" href="http://htmlbook.ru/html/applet" target="_blank"><del>&lt;applet&gt;</del></a> - предназначен для вставки на страницу апплетов — небольших программ, написанных на языке Java. Этот тег является устаревшим, взамен необходимо использовать более гибкий тег <a href="#object">&lt;object&gt;</a>.</blockquote>
+			<blockquote><a id="area" id="area" href="http://htmlbook.ru/html/area" target="_blank">&lt;area&gt;</a> - определяет активные области изображения, которые являются ссылками. Рисунок с привязанными к нему активными областями называется в совокупности картой-изображением.  Этот тег всегда располагается в контейнере &lt;map&gt;, который связывает координаты областей с изображением.</blockquote>
+			<blockquote><a id="article" href="http://htmlbook.ru/html/article" target="_blank">&lt;article&gt;</a> - задает содержание сайта вроде новости, статьи, записи блога, форума или др.</blockquote>
+			<blockquote><a id="aside" href="http://htmlbook.ru/html/aside" target="_blank">&lt;aside&gt;</a> - oпределяет блок сбоку от контента для размещения рубрик, ссылок на архив, меток и другой информации.</blockquote>
+			<blockquote><a id="audio" href="http://htmlbook.ru/html/audio" target="_blank">&lt;audio&gt;</a> - добавляет, воспроизводит и управляет настройками аудиозаписи на веб-странице.</blockquote>
 		<hr>
 
 		<p><a id="B"></a>B
 			<ul class="fast_find">
 				<li class="fast_find_li"><a href="#b">&lt;b&gt;</a></li>
 				<li class="fast_find_li"><a href="#base">&lt;base&gt;</a></li>
-				<li class="fast_find_li"><a href="#basefont">&lt;basefont&gt;</a></li>
+				<li class="fast_find_li"><a href="#basefont"><del>&lt;basefont&gt;</del></a></li>
 				<li class="fast_find_li"><a href="#bdi">&lt;bdi&gt;</a></li>
 				<li class="fast_find_li"><a href="#bdo">&lt;bdo&gt;</a></li>
 				<li class="fast_find_li"><a href="#blockquote">&lt;blockquote&gt;</a></li>
-				<li class="fast_find_li"><a href="#big">&lt;big&gt;</a></li>
+				<li class="fast_find_li"><a href="#big"><del>&lt;big&gt;</del></a></li>
 				<li class="fast_find_li"><a href="#body">&lt;body&gt;</a></li>
-				<li class="fast_find_li"><a href="#blink">&lt;blink&gt;</a></li>
+				<li class="fast_find_li"><a href="#blink"><del>&lt;blink&gt;</del></a></li>
 				<li class="fast_find_li"><a href="#br">&lt;br&gt;</a></li>
 				<li class="fast_find_li"><a href="#button">&lt;button&gt;</a></li>
-				<li class="fast_find_li"><a href="#bgsound">&lt;bgsound&gt;</a></li>
+				<li class="fast_find_li"><a href="#bgsound"><del>&lt;bgsound&gt;</del></a></li>
 			</ul>
 		</p>
 
 			<blockquote><a id="b" href="http://htmlbook.ru/html/b" target="_blank">&lt;b&gt;</a> - yстанавливает жирное начертание шрифта.</blockquote>
 			<blockquote><a id="base" href="http://htmlbook.ru/html/base" target="_blank">&lt;base&gt;</a> - определен внутри контейнера <a href="#head">&lt;head&gt;</a> и инструктирует браузер относительно полного базового адреса текущего документа. Тег &lt;base&gt; предназначен для документов, в которых используется относительный адрес и эти документы могут переноситься в другую папку или даже на другой компьютер без потери связи. Браузер ищет тег &lt;base&gt;, определяет полный адрес документа и корректно загружает его. Например, если адрес документа указан как &lt;base href="http://www.megasite.ru/hzchd/"&gt;, то при добавлении рисунков достаточно использовать относительный адрес &lt;img src="images/labuda.gif"&gt;. При этом полный путь к изображению будет http://www.megasite.ru/hzchd/images/labuda.gif, что позволяет браузеру всегда находить графический файл, независимо от того, где находится текущая веб-страница. Также можно применять и иерархическую систему пути с двумя точками. Так, если изображение добавляется как &lt;img src="../images/labuda.gif"&gt;, то полный путь к файлу будет http://www.megasite.ru/images/labuda.gif.
 				Второе применение тега &lt;base&gt; — задание целевого окна для всех ссылок на текущей странице.</blockquote>
-			<blockquote><a id="basefont" href="http://htmlbook.ru/html/basefont" target="_blank">&lt;basefont&gt;</a> - предназначен для задания шрифта, размера и цвета текста по умолчанию. Указанные значения будут использоваться во всем документе за исключением тега <a href="#font">&lt;font&gt;</a>, в котором можно переопределить параметры оформления текста. Допускается использование тега в контейнере <a href="#head" >&lt;head&gt;</a> или <a href="#body" >&lt;body&gt;</a>, причем несколько раз. Это позволяет изменять вид шрифта для части документа.</blockquote>
+			<blockquote><a id="basefont" href="http://htmlbook.ru/html/basefont" target="_blank"><del>&lt;basefont&gt;</del></a> - предназначен для задания шрифта, размера и цвета текста по умолчанию. Указанные значения будут использоваться во всем документе за исключением тега <a href="#font">&lt;font&gt;</a>, в котором можно переопределить параметры оформления текста. Допускается использование тега в контейнере <a href="#head" >&lt;head&gt;</a> или <a href="#body" >&lt;body&gt;</a>, причем несколько раз. Это позволяет изменять вид шрифта для части документа. Тег устаревший, используйте вместо него CSS.</blockquote>
 			<blockquote><a id="bdi" href="http://htmlbook.ru/html/bdi" target="_blank">&lt;bdi&gt;</a> - указывает фрагмент текста, который должен быть изолирован от изменения направления вывода текста. Такое поведение важно для текстов, одновременно содержащих разные языки, читающихся слева направо и справа налево.</blockquote>
 			<blockquote><a id="bdo" href="http://htmlbook.ru/html/bdo" target="_blank">&lt;bdo&gt;</a> - устанавливает направление вывода текста и преимущественно предназначен для использования с языками, где чтение происходит справа налево. Например, к ним относится арабский язык.</blockquote>
 			<blockquote><a id="blockquote" href="http://htmlbook.ru/html/blockquote" target="_blank">&lt;blockquote&gt;</a> -  для выделения длинных цитат внутри документа.</blockquote>
-			<blockquote><a id="big" href="http://htmlbook.ru/html/big" target="_blank">&lt;big&gt;</a> -  увеличивает размер шрифта на единицу по сравнению с обычным текстом. В HTML размер шрифта измеряется в условных единицах от 1 до 7, средний размер текста, используемый по умолчанию, принят 3. Таким образом, добавление тега &lt;big&gt; увеличивает текст на одну условную единицу. Допускается применение вложенных тегов &lt;big&gt;, при этом размер шрифта будет больше с каждым уровнем.
-				На размер шрифта влияет не только заданный атрибут size тега <a href="font" >&lt;font&gt;</a> , но и выбор гарнитуры шрифта. Шрифт Arial выглядит крупнее, чем шрифт Times, а шрифт Verdana чуть больше шрифта Arial. Учитывайте эту особенность при выборе шрифта и его размеров. Для более точного управления размером текста используйте стили.</blockquote>
+			<blockquote><a id="big" href="http://htmlbook.ru/html/big" target="_blank"><del>&lt;big&gt;</del></a> -  увеличивает размер шрифта на единицу по сравнению с обычным текстом. В HTML размер шрифта измеряется в условных единицах от 1 до 7, средний размер текста, используемый по умолчанию, принят 3.
+				 Тег устаревший используйте семантически соответствующий элемент с CSS для стиля. </blockquote>
 			<blockquote><a id="body" href="http://htmlbook.ru/html/body" target="_blank"> &lt;body&gt; </a> - предназначен для хранения содержания веб-страницы (контента), отображаемого в окне браузера. </blockquote>
-			<blockquote><a id="blink" href="http://htmlbook.ru/html/blink" target="_blank">&lt;blink&gt;</a> - yстанавливает мигание текста.</blockquote>
+			<blockquote><a id="blink" href="http://htmlbook.ru/html/blink" target="_blank"><del>&lt;blink&gt;</del></a> - yстанавливает мигание текста. CSS предоставляет альтернативу с ограниченной поддержкой браузера, но обратите внимание, что мигающий текст раздражает.</blockquote>
 			<blockquote><a id="br" href="http://htmlbook.ru/html/br" target="_blank">&lt;br&gt;</a> - устанавливает перевод строки в том месте, где этот тег находится.</blockquote>
 			<blockquote><a id="button" href="http://htmlbook.ru/html/button" target="_blank">&lt;button&gt;</a> - создает на веб-странице кнопки и по своему действию напоминает результат, получаемый с помощью тега <a href="input"> &lt;input&gt; </a> (с атрибутом type="button | reset | submit"). В отличие от этого тега, &lt;button&gt; предлагает расширенные возможности по созданию кнопок. Например, на подобной кнопке можно размещать любые элементы HTML, в том числе изображения. Используя стили можно определить вид кнопки путем изменения шрифта, цвета фона, размеров и других параметров.
 					Теоретически, тег &lt;button&gt; должен располагаться внутри формы, устанавливаемой элементом <a href="#form"> &lt;form&gt;</a>. Тем не менее, браузеры не выводят сообщение об ошибке и корректно работают с тегом &lt;button&gt;, если он встречается самостоятельно. Однако, если необходимо результат нажатия на кнопку отправить на сервер, помещать &lt;button&gt; в контейнер <a href="#form">&lt;form&gt;</a> обязательно.</blockquote>
-			<blockquote><a id="bgsound" href="http://htmlbook.ru/html/bgsound" target="_blank">&lt;bgsound&gt;</a> - определяет музыкальный файл, который будет проигрываться на веб-странице при ее открытии. Громкость, продолжительность звучания музыки и другие характеристики определяются с помощью атрибутов тега, а также могут управляться через скрипты. Этот тег должен размещаться только в контейнере <a href="#head" >&lt;head&gt;</a>.<a class="red_text"> Тег &lt;bgsound&gt; не входит в спецификацию HTML и при его использовании код не пройдет валидацию. К тому же пользователи, как правило, отрицательно относятся к музыке, которая играет на сайте, поэтому используйте эту возможность с осторожностью и по необходимости.</a></blockquote>
+			<blockquote><a id="bgsound" href="http://htmlbook.ru/html/bgsound" target="_blank"><del>&lt;bgsound&gt;<del></a> - определяет музыкальный файл, который будет проигрываться на веб-странице при ее открытии. Громкость, продолжительность звучания музыки и другие характеристики определяются с помощью атрибутов тега, а также могут управляться через скрипты. Этот тег должен размещаться только в контейнере <a href="#head" >&lt;head&gt;</a>. Тег устаревший, используйте <a href="#audio"> &lt;audio&gt;.</blockquote>
 		<hr>
 
 
@@ -107,44 +121,57 @@
 			<ul class="fast_find">
 				<li class="fast_find_li"><a href="#canvas">&lt;canvas&gt;</a></li>
 				<li class="fast_find_li"><a href="#caption">&lt;caption&gt;</a></li>
-				<li class="fast_find_li"><a href="#center">&lt;center&gt;</a></li>
+				<li class="fast_find_li"><a href="#center"><del>&lt;center&gt;</del></a></li>
 				<li class="fast_find_li"><a href="#cite">&lt;cite&gt;</a></li>
 				<li class="fast_find_li"><a href="#code">&lt;code&gt;</a></li>
 				<li class="fast_find_li"><a href="#col">&lt;col&gt;</a></li>
 				<li class="fast_find_li"><a href="#colgroup">&lt;colgroup&gt;</a></li>
 				<li class="fast_find_li"><a href="#command">&lt;command&gt;</a></li>
-				<li class="fast_find_li"><a href="#comment">&lt;comment&gt;</a></li>
 			</ul>
 
 		</p>
 			<blockquote><a id="canvas" href="http://htmlbook.ru/html/canvas" target="_blank">&lt;canvas&gt;</a> - Создает область, в которой при помощи JavaScript можно рисовать разные объекты, выводить изображения, трансформировать их и менять свойства. При помощи тега &lt;canvas&gt; можно создавать рисунки, анимацию, игры и др.</blockquote>
 			<blockquote><a id="caption" href="http://htmlbook.ru/html/caption" target="_blank">&lt;caption&gt;</a> - предназначен для создания заголовка к таблице и может размещаться только внутри контейнера &lt;table&gt;, причем сразу после открывающего тега.</blockquote>
-			<blockquote><a id="center" href="http://htmlbook.ru/html/center" target="_blank">&lt;center&gt;</a> - выравнивает содержимое контейнера по центру относительно родительского элемента.</blockquote>
+			<blockquote><a id="center" href="http://htmlbook.ru/html/center" target="_blank"><del>&lt;center&gt;</del></a> - выравнивает содержимое контейнера по центру относительно родительского элемента. Тег устаревший, используйте CSS.</blockquote>
 			<blockquote><a id="cite" href="http://htmlbook.ru/html/cite" target="_blank">&lt;cite&gt;</a> - помечает текст как цитату или сноску на другой материал. Такое выделение удобно для изменения стиля текста через CSS, а также применяется для разделения кода HTML на структурные элементы. Браузеры обычно устанавливают текст внутри контейнера &lt;cite&gt; курсивом.</blockquote>
 			<blockquote><a id="code" href="http://htmlbook.ru/html/code" target="_blank">&lt;code&gt;</a> - предназначен для отображения одной или нескольких строк текста, который представляет собой программный код. Сюда относятся имена переменных, ключевые слова, тексты функции и т.д. Браузеры обычно отображают содержимое контейнера &lt;code&gt; как моноширинный текст уменьшенного размера.
 					В отличие от тега <a href="#pre">&lt;pre&gt;</a> дополнительные пробелы внутри контейнера &lt;code&gt; не учитываются, так же, как и переносы текста. Поэтому используйте тег <a href="#br">&lt;br&gt;</a> или <a href="#p">&lt;p&gt;</a> для создания переносов.</blockquote>
 			<blockquote><a id="col" href="http://htmlbook.ru/html/col" target="_blank">&lt;col&gt;</a> -  задает ширину и другие характеристики одной или нескольких колонок таблицы. При наличии этого тега браузер начинает показывать содержимое таблицы, не дожидаясь ее полной загрузки. Тег &lt;col&gt; можно использовать совместно с тегом <a href="#colgroup">&lt;colgroup&gt;</a>, который задает группу колонок, обладающих общими характеристиками.</blockquote>
 			<blockquote><a id="colgroup" href="http://htmlbook.ru/html/colgroup" target="_blank">&lt;colgroup&gt;</a> -  предназначен для задания ширины и стиля одной или нескольких колонок таблицы. Этот тег позволяет уменьшить код таблицы за счет сокращения повторяющихся атрибутов, и при наличии этого тега браузер начинает показывать содержимое таблицы, не дожидаясь ее полной загрузки. Тег &lt;colgroup&gt; можно использовать в комбинации с тегом <a href="col">&lt;col&gt;</a>, который определяет характеристики одной или нескольких колонок.
-					<details>
-						<summary>
-							More...
-						</summary>
-						<p>
-							Обычно закрывающий тег не требуется, но если &lt;colgroup&gt; выступает как контейнер для элементов <a href="#col">&lt;col&gt;</a>, тогда следует добавить тег &lt;/colgroup&gt; в конце группы.
-							Разница между свойствами тегов &lt;colgroup&gt; и <a href="#col">&lt;col&gt;</a> не очень велика и состоит в следующем. &lt;colgroup&gt; позволяет объединять колонки в определенные группы, также при добавлении атрибута rules="groups" к тегу <a href="#table">&lt;table&gt;</a> браузер будет рисовать линию только между колонками, созданными с помощью &lt;colgroup&gt;. В остальных случаях поведение колонок назначенных через элементы &lt;colgroup&gt; и <a href="#col">&lt;col&gt;</a> идентично.
-						</p>
-					</details>
+					Обычно закрывающий тег не требуется, но если &lt;colgroup&gt; выступает как контейнер для элементов <a href="#col">&lt;col&gt;</a>, тогда следует добавить тег &lt;/colgroup&gt; в конце группы.
+					Разница между свойствами тегов &lt;colgroup&gt; и <a href="#col">&lt;col&gt;</a> не очень велика и состоит в следующем. &lt;colgroup&gt; позволяет объединять колонки в определенные группы, также при добавлении атрибута rules="groups" к тегу <a href="#table">&lt;table&gt;</a> браузер будет рисовать линию только между колонками, созданными с помощью &lt;colgroup&gt;. В остальных случаях поведение колонок назначенных через элементы &lt;colgroup&gt; и <a href="#col">&lt;col&gt;</a> идентично.
 			</blockquote>
 			<blockquote><a id="command" href="http://htmlbook.ru/html/command" target="_blank">&lt;command&gt;</a> - cоздает команду в виде переключателя, флажка или обычной кнопки. Тег &lt;command&gt; должен располагаться внутри <a href="#menu">&lt;menu&gt;</a>, в противном случае он не будет показан.</blockquote>
-			<blockquote><a id="comment" href="http://htmlbook.ru/html/comment" target="_blank">&lt;comment&gt;</a> - добавляет комментарий в код документа. Тег &lt;comment&gt; допустимо использовать только в <a href="#body">&lt;body&gt;</a>.</blockquote>
 		<hr>
 
 		<p><a id="D"></a>D</p>
 
-		 	<blockquote><a href="http://htmlbook.ru/html/div" target="_blank">&lt;div&gt;</a> - является блочным элементом и предназначен для выделения фрагмента документа с целью изменения вида содержимого. Как правило, вид блока управляется с помощью стилей.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/dl" target="_blank">&lt;dl&gt;</a> - предназначенных для создания списка определений. Каждый такой список начинается с контейнера &lt;dl&gt;, куда входит тег &lt;dt&gt; создающий термин и тег &lt;dd&gt; задающий определение этого термина.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/dt" target="_blank">&lt;dt&gt;</a> - предназначенных для создания списка определений.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/dd" target="_blank">&lt;dd&gt;</a> - предназначенных для создания списка определений.</blockquote>
+      <ul class="fast_find">
+        <li class="fast_find_li"><a href="#datagrid">&lt;datagrid&gt;</a></li>
+        <li class="fast_find_li"><a href="#datalist">&lt;datalist&gt;</a></li>
+        <li class="fast_find_li"><a href="#dd">&lt;dd&gt;</a></li>
+        <li class="fast_find_li"><a href="#del">&lt;del&gt;</a></li>
+        <li class="fast_find_li"><a href="#details">&lt;details&gt;</a></li>
+        <li class="fast_find_li"><a href="#dfn">&lt;dfn&gt;</a></li>
+        <li class="fast_find_li"><a href="#dialog">&lt;dialog&gt;</a></li>
+        <li class="fast_find_li"><a href="#dir"><del>&lt;dir&gt;</del></a></li>
+        <li class="fast_find_li"><a href="#div">&lt;div&gt;</a></li>
+        <li class="fast_find_li"><a href="#dl">&lt;dl&gt;</a></li>
+        <li class="fast_find_li"><a href="#dt">&lt;dt&gt;</a></li>
+      </ul>
+
+      <blockquote><a id="datagrid" href="http://www.quackit.com/html_5/tags/html_datagrid_tag.cfm" target="_blank">&lt;datagrid&gt;</a>Тег введён в HTML5 используеться для построения интерактивных деревьв списков или таблиц. Пока не поддерживаеться большинством браузеров.</blockquote>
+      <blockquote><a id="datalist" href="http://htmlbook.ru/html/datalist" target="_blank">&lt;datalist&gt;</a> - cоздает список вариантов, которые можно выбирать при наборе в текстовом поле. Изначально этот список скрыт и становится доступным при получении полем фокуса или наборе текста.</blockquote>
+      <blockquote><a id="dd" href="http://htmlbook.ru/html/dd" target="_blank">&lt;dd&gt;</a> - предназначенных для создания списка определений.</blockquote>
+      <blockquote><a id="del" href="http://htmlbook.ru/html/del" target="_blank">&lt;del&gt;</a> - используется для выделения текста, который был удален в новой версии документа. Подобное форматирование позволяет отследить, какие изменения в тексте документа были сделаны. Браузеры обычно помечают текст в контейнере &lt;del&gt; как перечеркнутый.</blockquote>
+      <blockquote><a id="details" href="http://htmlbook.ru/html/details" target="_blank">&lt;details&gt;</a> - используется для хранения информации, которую можно скрыть или показать по требованию пользователя. По умолчанию содержимое тега не отображается, для изменения статуса применяется атрибут open.</blockquote>
+      <blockquote><a id="dfn" href="http://htmlbook.ru/html/dfn" target="_blank">&lt;dfn&gt;</a> - Как правило, в документе, когда упоминается новый термин, он выделяется курсивом и дается его определение. При использовании этого термина в дальнейшем, он считается уже известным читателю. Тег &lt;dfn&gt; применяется для выделения таких терминов при их первом появлении в тексте.
+          Браузеры отображают содержимое контейнера &lt;dfn&gt; с помощью курсивного начертания.</blockquote>
+      <blockquote><a id="dialog" href="https://htmlhook.ru/html5-dialog-v-dokumente.html" target="_blank">&lt;dialog&gt;</a> - выводит диалоговое окно, но нужно использовать вместе с JavaScript.</blockquote>
+      <blockquote><a id="dir" href="http://htmlbook.ru/html/dir" target="_blank"><del>&lt;dir&gt;</del></a> - используйте вместо этого тега <a href="#ul">&lt;ul&gt;.</a></blockquote>
+      <blockquote><a id="div" href="http://htmlbook.ru/html/div" target="_blank">&lt;div&gt;</a> - является блочным элементом и предназначен для выделения фрагмента документа с целью изменения вида содержимого. Как правило, вид блока управляется с помощью стилей.</blockquote>
+			<blockquote><a id="dl" href="http://htmlbook.ru/html/dl" target="_blank">&lt;dl&gt;</a> - предназначенных для создания списка определений. Каждый такой список начинается с контейнера &lt;dl&gt;, куда входит тег <a href="#dt">&lt;dt&gt;</a> создающий термин и тег <a href="#dd">&lt;dd&gt;</a> задающий определение этого термина.</blockquote>
+			<blockquote><a id="dt" href="http://htmlbook.ru/html/dt" target="_blank">&lt;dt&gt;</a> - предназначенных для создания списка определений.</blockquote>
 
 		<hr>
 
@@ -296,4 +323,4 @@
 </body>
 </html>
 
-<!-- <blockquote><a href="" target="_blank">&lt;&gt;</a> - </blockquote> -->
+<!-- <blockquote><a id="" href="" target="_blank">&lt;&gt;</a> - </blockquote> -->
