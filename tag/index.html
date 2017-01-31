@@ -10,6 +10,15 @@
 <body>
 	<header>
 	<!--	<h2>Теги которые я выучил</h2> -->
+
+			<select class="select_source" onchange="top.location=this.value">
+				<option>Источники</option>
+				<option value="https://dev.w3.org/html5/html-author/#tags">HTML5 Reference</option>
+				<option value="https://html.spec.whatwg.org/#" class="icon-2">HTML Standart</option>
+				<option value="http://htmlbook.ru/html/">htmlbook.ru/html</option>
+			</select>
+
+
 		<form id="find">
 			<input type="text" placeholder="Поиск">
 		</form>
@@ -220,20 +229,41 @@
 
 		<p><a id="H"></a>H</p>
 
-			<blockquote><a href="http://htmlbook.ru/html/h1" target="_blank">&lt;h1&gt; - &lt;h6&gt;</a> - шесть заголовков разного уровня, которые показывают относительную важность секции, расположенной после заголовка. </blockquote>
-			<blockquote><a id="head" href="http://htmlbook.ru/html/head" target="_blank">&lt;head&gt;</a> - предназначен для хранения других элементов, цель которых — помочь браузеру в работе с данными. Содержимое тега &lt;head&gt; не отображается напрямую на веб-странице, за исключением тега &lt;title&gt; устанавливающего заголовок окна веб-страницы.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/header" target="_blank">&lt;header&gt;</a> - задает «шапку» сайта или раздела, в которой обычно располагается заголовок.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/hr" target="_blank">&lt;hr&gt;</a> - pисует горизонтальную линию, которая по своему виду зависит от используемых параметров, а также браузера.</blockquote>
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#h1-h6">&lt;h1&gt; - &lt;h6&gt;</a></li>
+				<li class="fast_find_li"><a href="#head">&lt;head&gt;</a></li>
+				<li class="fast_find_li"><a href="#header">&lt;header&gt;</a></li>
+				<li class="fast_find_li"><a href="#hr">&lt;hr&gt;</a></li>
+				<li class="fast_find_li"><a href="#html">&lt;html&gt;</a></li>
+			</ul>
 
+			<blockquote><a id="h1-h6" href="http://htmlbook.ru/html/h1" target="_blank">&lt;h1&gt; - &lt;h6&gt;</a> - шесть заголовков разного уровня, которые показывают относительную важность секции, расположенной после заголовка. </blockquote>
+			<blockquote><a id="head" href="http://htmlbook.ru/html/head" target="_blank">&lt;head&gt;</a> - предназначен для хранения других элементов, цель которых — помочь браузеру в работе с данными. Содержимое тега &lt;head&gt; не отображается напрямую на веб-странице, за исключением тега &lt;title&gt; устанавливающего заголовок окна веб-страницы.</blockquote>
+			<blockquote><a id="header" href="http://htmlbook.ru/html/header" target="_blank">&lt;header&gt;</a> - задает «шапку» сайта или раздела, в которой обычно располагается заголовок.</blockquote>
+			<blockquote><a id="hr" href="http://htmlbook.ru/html/hr" target="_blank">&lt;hr&gt;</a> - pисует горизонтальную линию, которая по своему виду зависит от используемых параметров, а также браузера.</blockquote>
+			<blockquote><a id="html" href="https://dev.w3.org/html5/html-author/#the-html-element" target="_blank">&lt;html&gt;</a> - является корневым элементом документа. Каждый документ должен начинаться с этого элемента, и он должен содержать в себе два элемента - <a href="#head">&lt;head&gt;</a> и <a href="#body">&lt;body&gt;</a>. Также рекомендуеться указывать основной язык страницы использую атрибут <i>lang</i>.</blockquote>
 		<hr>
 
 		 <p><a id="I"></a>I</p>
 
-		<blockquote><a href="http://htmlbook.ru/html/i" target="_blank">&lt;i&gt;</a> - yстанавливает курсивное начертание шрифта.</blockquote>
-		<blockquote><a href="http://htmlbook.ru/html/input" target="_blank">&lt;input&gt;</a> - предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.</blockquote>
+		 	<ul class="fast_find">
+		 		<li class="fast_find_li"><a href="#i">&lt;i&gt;</a></li>
+				<li class="fast_find_li"><a href="#iframe">&lt;iframe&gt;</a></li>
+				<li class="fast_find_li"><a href="#img">&lt;img&gt;</a></li>
+				<li class="fast_find_li"><a href="#input">&lt;input&gt;</a></li>
+				<li class="fast_find_li"><a href="#ins">&lt;ins&gt;</a></li>
+				<li class="fast_find_li"><a href="#isindex"><del>&lt;isindex&gt;</del></a></li>
+		 	</ul>
+
+		<blockquote><a id="i" href="http://htmlbook.ru/html/i" target="_blank">&lt;i&gt;</a> - yстанавливает курсивное начертание шрифта.</blockquote>
+		<blockquote><a id="iframe" href="http://htmlbook.ru/html/iframe" target="_blank">&lt;iframe&gt;</a> - создает плавающий фрейм, который находится внутри обычного документа, он позволяет загружать в область заданных размеров любые другие независимые документы.
+			Тег &lt;iframe&gt; является контейнером, содержание которого игнорируется браузерами, не поддерживающими данный тег. Для таких браузеров можно указать альтернативный текст, который увидят пользователи. Он должен располагаться между элементами &lt;iframe&gt; и &lt;/iframe&gt;. </blockquote>
 		<blockquote><a id="img" href="http://htmlbook.ru/html/img" target="_blank">&lt;img&gt;</a> - предназначен для отображения на веб-странице изображений в графическом формате GIF, JPEG или PNG. Адрес файла с картинкой задаётся через атрибут src. Если необходимо, то рисунок можно сделать ссылкой на другой файл, поместив тег &lt;img&gt; в контейнер<a href="#a"> &lt;a&gt;</a>. При этом вокруг изображения отображается рамка, которую можно убрать, добавив атрибут border="0" в тег &lt;img&gt;
-				Рисунки также могут применяться в качестве карт-изображений, когда картинка содержит активные области, выступающие в качестве ссылок. Такая карта по внешнему виду ничем не отличается от обычного изображения, но при этом оно может быть разбито на невидимые зоны разной формы, где каждая из областей служит ссылкой</blockquote>
-.
+				Рисунки также могут применяться в качестве карт-изображений, когда картинка содержит активные области, выступающие в качестве ссылок. Такая карта по внешнему виду ничем не отличается от обычного изображения, но при этом оно может быть разбито на невидимые зоны разной формы, где каждая из областей служит ссылкой.</blockquote>
+		<blockquote><a id="input" href="http://htmlbook.ru/html/input" target="_blank">&lt;input&gt;</a> - предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.</blockquote>
+		<blockquote><a id="ins" href="http://htmlbook.ru/html/ins" target="_blank">&lt;ins&gt;</a> -  предназначен для выделения текста, который был добавлен в новую версию документа. Подобное форматирование позволяет отследить, какие изменения в тексте документа были сделаны.
+			Браузеры обычно помечают текст в контейнере &lt;ins&gt; как подчеркнутый.</blockquote>
+		<blockquote><a id="insindex" href="http://htmlbook.ru/html/isindex" target="_blank"><del>&lt;insindex&gt;</del></a> - предназначен для поискового индекса в текущем документе. Этот тег является устаревшим, к тому же браузеры не поддерживают его должным образом.</blockquote>
 	 	<hr>
 
 		<p><a id="J"></a>J</p>
@@ -242,18 +272,53 @@
 
 		<p><a id="K"></a>K</p>
 
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#kbd">&lt;kbd&gt;</a></li>
+			</ul>
+
+		<blockquote><a id="kbd" href="" target="_blank">&lt;&gt;</a> - используется для обозначения текста, который набирается на клавиатуре или для названия клавиш. Браузеры обычно помечают текст в контейнере &lt;kbd&gt; моноширинным шрифтом.</blockquote>
+
 		<hr>
 
 		<p><a id="L"></a>L</p>
-			<blockquote><a href="http://htmlbook.ru/html/li" target="_blank">&lt;li&gt;</a> - определяет отдельный элемент списка. Внешний тег &lt;ul&gt; или &lt;ol&gt; устанавливает тип списка — маркированный или нумерованный.</blockquote>
 
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#label">&lt;label&gt;</a></li>
+				<li class="fast_find_li"><a href="#legend">&lt;legend&gt;</a></li>
+				<li class="fast_find_li"><a href="#li">&lt;li&gt;</a></li>
+				<li class="fast_find_li"><a href="#link">&lt;link&gt;</a></li>
+				<li class="fast_find_li"><a href="#link"><del>&lt;listing&gt;</del></a></li>
+			</ul>
+
+			<blockquote><a id="label" href="http://htmlbook.ru/html/label" target="_blank">&lt;label&gt;</a> - устанавливает связь между определенной меткой, в качестве которой обычно выступает текст, и элементом формы (<a href="#j=input">&lt;input&gt;</a>, <a href="#select">&lt;select&gt;</a>, <a href="#textarea">&lt;textarea&gt;</a>). Такая связь необходима, чтобы изменять значения элементов формы при нажатии курсором мыши на текст. Кроме того, с помощью &lt;label&gt; можно устанавливать горячие клавиши на клавиатуре и переходить на активный элемент подобно ссылкам.
+				Существует два способа связывания объекта и метки. Первый заключается в использовании идентификатора id внутри элемента формы и указании его имени в качестве атрибута for тега &lt;label&gt;. При втором способе элемент формы помещается внутрь контейнера &lt;label&gt;.</blockquote>
+			<blockquote><a id="fieldset" href="http://htmlbook.ru/html/legend" target="_blank">&lt;fieldset&gt;</a> - применяется для создания заголовка группы элементов формы, которая определяется с помощью тега <a href="#fieldset">&lt;fieldset&gt;</a>. Группа элементов обозначается в браузере с помощью рамки, а текст, который располагается внутри контейнера &lt;legend&gt;, встраивается в эту рамку.</blockquote>
+			<blockquote><a id="li" href="http://htmlbook.ru/html/li" target="_blank">&lt;li&gt;</a> - определяет отдельный элемент списка. Внешний тег &lt;ul&gt; или &lt;ol&gt; устанавливает тип списка — маркированный или нумерованный.</blockquote>
+			<blockquote><a id="link" href="http://htmlbook.ru/html/link" target="_blank">&lt;link&gt;</a> - Устанавливает связь с внешним документом вроде файла со стилями или со шрифтами. В отличие от тега <a href="#a">&lt;a&gt;</a>, тег &lt;link&gt; размещается всегда внутри контейнера <head> и не создает ссылку.</blockquote>
+			<blockquote><a id="listing" href="http://htmlbook.ru/html/listing" target="_blank"><del>&lt;listing&gt;<del></a> - предназначен для вывода листинга программ или кода. Отображает содержимое моноширинным шрифтом уменьшенного размера. Тег устаревший, используйте тег <a href="#pre">&lt;pre&gt;</a></blockquote>
 		<hr>
 
 		<p><a id="M"></a>M</p>
 
-			<blockquote><a href="http://htmlbook.ru/html/mark" target="_blank">&lt;mark&gt;</a> - помечает текст как выделенный. Такой текст ничем не отличается от обычного, но его вид может быть изменен с помощью стилей.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/main" target="_blank">&lt;main&gt;</a> - предназначен для основного содержимого документа. Содержимое должно быть уникальным и не включать типовые блоки вроде шапки сайта, подвала, навигации, боковой панели, формы поиска и т. п.</blockquote>
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#main">&lt;main&gt;</a></li>
+				<li class="fast_find_li"><a href="#map">&lt;map&gt;</a></li>
+				<li class="fast_find_li"><a href="#mark">&lt;mark&gt;</a></li>
+				<li class="fast_find_li"><a href="#marquee"><del>&lt;marquee&gt;</del></a></li>
+				<li class="fast_find_li"><a href="#menu">&lt;menu&gt;</a></li>
+				<li class="fast_find_li"><a href="#meta">&lt;meta&gt;</a></li>
+				<li class="fast_find_li"><a href="#meter">&lt;meter&gt;</a></li>
+
+			</ul>
+
+			<blockquote><a id="main" href="http://htmlbook.ru/html/main" target="_blank">&lt;main&gt;</a> - предназначен для основного содержимого документа. Содержимое должно быть уникальным и не включать типовые блоки вроде шапки сайта, подвала, навигации, боковой панели, формы поиска и т. п.</blockquote>
 			<blockquote><a id="map" href="http://htmlbook.ru/html/map" target="_blank">&lt;map&gt;</a> - служит контейнером для элементов <a href="#area">&lt;area&gt;</a>, которые определяют активные области для карт-изображений. Такие области устанавливают невидимые зоны на изображении, являющиеся ссылками на HTML-документы. Цель использования тега &lt;map&gt; — в связывании тега <a href="#img">&lt;img&gt;</a> с клиентской картой-изображением. Эта связь определяется применением единого идентификатора как в теге <a href="#img"> &lt;img&gt;</a>, задаваемого атрибутом usemap, так и в теге &lt;map&gt;, устанавливаемого атрибутом name.</blockquote>
+			<blockquote><a id="mark" href="http://htmlbook.ru/html/mark" target="_blank">&lt;mark&gt;</a> - помечает текст как выделенный. Такой текст ничем не отличается от обычного, но его вид может быть изменен с помощью стилей.</blockquote>
+			<blockquote><a id="marquee" href="http://htmlbook.ru/html/marquee" target="_blank"><del>&lt;marquee&gt;</del></a> - создает бегущую строку на странице. На самом деле содержимое контейнера &lt;marquee&gt; не ограничивается строками и позволяет перемещать (скролировать) любые элементы веб-страницы — изображения, текст, таблицы, элементы форм и т.д. Перемещение можно задать не только по горизонтали, но и вертикали, в этом случае указываются размеры области, в которой будет происходить движение.</blockquote>
+			<blockquote><a id="menu" href="http://htmlbook.ru/html/menu" target="_blank">&lt;menu&gt;</a> - выступает контейнером для тега <a href="#command">&lt;command&gt;</a> и создания меню.</blockquote>
+			<blockquote><a id="meta" href="http://htmlbook.ru/html/meta" target="_blank">&lt;meta&gt;</a> - определяет метатеги, которые используются для хранения информации предназначенной для браузеров и поисковых систем. Например, механизмы поисковых систем обращаются к метатегам для получения описания сайта, ключевых слов и других данных. Разрешается использовать более чем один метатег, все они размещаются в контейнере <a href="head">&lt;head&gt;.</a> Как правило, атрибуты любого метатега сводятся к парам «имя=значение», которые определяются ключевыми словами content, name или http-equiv.</blockquote>
+			<blockquote><a id="meter" href="http://htmlbook.ru/html/meter" target="_blank">&lt;meter&gt;</a> - элемент представляет собой скалярное измерение в пределах известного диапазона или дробное значение.</blockquote>
+
 		<hr>
 
 		<p><a id="N"></a>N</p>

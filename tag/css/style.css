@@ -86,6 +86,20 @@ nav{
 	display: inline;
 	margin-right: 20px;
 }
+
+.select_source{
+
+	width: 150px;
+
+	border-radius:5px;
+	border: 1px solid transparent;
+
+	position: fixed;
+	top: 20px;
+	right: 220px;
+}
+
+
 #div1{
 
 	position: fixed;
@@ -99,6 +113,8 @@ nav{
 
 #find input[type="text"]{
 
+	width: 150px;
+	
 	position: fixed;
 	top: 20px;
 	right: 40px;
