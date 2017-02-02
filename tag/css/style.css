@@ -5,12 +5,14 @@ a{
 }
 
 article{
-
+	
 }
 
 body{
+	background-color: #f2f2f2;
+	background-image: url(../img/bg2.jpg);
+
 	position: absolute;
-	background: #20b2aa;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 12pt;
 
@@ -34,6 +36,7 @@ footer{
 	position: fixed;
 	bottom: 0px;
 	left: 0px;
+	background-color: #27BC85;
 }
 
 
@@ -48,7 +51,7 @@ header{
 	position: fixed;
 	top: 0px;
 	left: 0px;
-	background: #20b2aa;
+	background: #01bc78;
 
 }
 
@@ -70,7 +73,7 @@ nav{
 .nav_ul{
 
 	left: 10px;
-	top: 20px;
+	top: 70px;
 	bottom: 20px;
 	position: fixed;
 	width: 8%;
@@ -86,7 +89,7 @@ nav{
 .fast_find_li{
 	display: inline;
 	margin-right: 20px;
-	
+
 }
 
 .select_source{
