@@ -349,7 +349,7 @@
 			</ul>
 
 			<blockquote><a id="object" href="http://htmlbook.ru/html/object" target="_blank">&lt;object&gt;</a> - сообщает браузеру, как загружать и отображать объекты, которые исходно браузер не понимает. Как правило, такие объекты требуют подключения к браузеру специального модуля, который называется плагин, или запуска вспомогательной программы.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/ol" target="_blank">&lt;ol&gt;</a> - устанавливает нумерованный список. Каждый элемент списка должен начинаться с тега &lt;li&gt;.</blockquote>
+			<blockquote><a id="ol" href="http://htmlbook.ru/html/ol" target="_blank">&lt;ol&gt;</a> - устанавливает нумерованный список. Каждый элемент списка должен начинаться с тега &lt;li&gt;.</blockquote>
 			<blockquote><a id="optgroup" href="http://htmlbook.ru/html/optgroup" target="_blank">&lt;optgroup&gt;</a> - представляет собой контейнер, внутри которого располагаются теги <a href="#option">&lt;option&gt;</a> объединенные в одну группу. Особенностью тега &lt;optgroup&gt; является то, что он не выделяется как обычный элемент списка, акцентируется с помощью жирного начертания, а все элементы, входящие в этот контейнер, смещаются вправо от своего исходного положения.</blockquote>
 			<blockquote><a id="option" href="http://htmlbook.ru/html/option" target="_blank">&lt;option&gt;</a> - определяет отдельные пункты списка, создаваемого с помощью контейнера <a href="#select">&lt;select&gt;</a>. Ширина списка определяется самым широким текстом, указанным в теге &lt;option&gt;, а также может изменяться с помощью стилей. Если планируется отправлять данные списка на сервер, то требуется поместить элемент <a href="select">&lt;select&gt;</a> внутрь формы. Это также необходимо, когда к данным списка идет обращение через скрипты.</blockquote>
 			<blockquote><a id="output" href="http://htmlbook.ru/html/output" target="_blank">&lt;output&gt;</a> - определяет область в которую выводится информация, преимущественно с помощью скриптов.</blockquote>
@@ -357,60 +357,156 @@
 
 		<p><a id="P"></a>P</p>
 
-			<blockquote><a href="http://htmlbook.ru/html/p" target="_blank">&lt;p&gt;</a> - oпределяет текстовый абзац.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/pre" target="_blank">&lt;pre&gt;</a> - определяет блок предварительно форматированного текста. Такой текст отображается обычно моноширинным шрифтом и со всеми пробелами между словами.</blockquote>
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#p">&lt;P&gt;</a></li>
+				<li class="fast_find_li"><a href="#param">&lt;param&gt;</a></li>
+				<li class="fast_find_li"><a href="#plaintext"><del>&lt;plaintext&gt;</del></a></li>
+				<li class="fast_find_li"><a href="#pre">&lt;pre&gt;</a></li>
+				<li class="fast_find_li"><a href="#progress">&lt;progress&gt;</a></li>
+			</ul>
 
+			<blockquote><a id="P" href="http://htmlbook.ru/html/p" target="_blank">&lt;p&gt;</a> - oпределяет текстовый абзац.</blockquote>
+			<blockquote><a id="param" href="http://htmlbook.ru/html/param" target="_blank">&lt;param&gt;</a> -  предназначен для передачи значений параметров Java-апплетам или объектам веб-страницы, созданным с помощью тегов <a href="applet"><del>&lt;applet&gt;</del></a> или <a href="#object">&lt;object&gt;</a>. Такой подход позволяет прямо в коде HTML-документа изменять характеристики апплета без его дополнительной компиляции. Количество одновременно используемых тегов &lt;param&gt; может быть больше одного и для каждого из них задается пара «имя/значение» через атрибуты name и value.</blockquote>
+			<blockquote><a id="plaintext" href="http://htmlbook.ru/html/plaintext" target="_blank"><del>&lt;plaintext&gt;</del></a> - отображает содержимое контейнера «как есть». Пока тег &lt;plaintext&gt; не закрыт, все теги внутри него отображаются как обычный текст. Несмотря на то, что все браузеры поддерживают этот тег, он не входит в спецификацию HTML и его использование осуждается.</blockquote>
+			<blockquote><a id="pre" href="http://htmlbook.ru/html/pre" target="_blank">&lt;pre&gt;</a> - определяет блок предварительно форматированного текста. Такой текст отображается обычно моноширинным шрифтом и со всеми пробелами между словами.</blockquote>
+			<blockquote><a id="progress" href="http://htmlbook.ru/html/progress" target="_blank">&lt;progress&gt;</a> - используется для отображения прогресса завершенности задачи. Изменение значения происходит через JavaScript.</blockquote>
 		<hr>
 
 		<p><a id="Q"></a>Q</p>
+
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#">&lt;q&gt;</a></li>
+			</ul>
+
+			<blockquote><a id="q" href="http://htmlbook.ru/html/q" target="_blank">&lt;q&gt;</a> - используется для выделения в тексте цитат. Содержимое контейнера автоматически отображается в браузере в кавычках.</blockquote>
 
 		<hr>
 
 		<p><a id="R"></a>R</p>
 
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#rp">&lt;rp&gt;</a></li>
+				<li class="fast_find_li"><a href="#rt">&lt;rt&gt;</a></li>
+				<li class="fast_find_li"><a href="#ruby">&lt;ruby&gt;</a></li>
+			</ul>
+
+			<blockquote><a id="rp" href="http://htmlbook.ru/html/rp" target="_blank">&lt;rp&gt;</a> - используется для вывода текста в браузерах, которые не поддерживают тег <a href="ruby">&lt;ruby&gt;</a>. В остальных браузерах текст, заключенный в контейнер &lt;rp&gt;, не отображается. Тег <a href="rt">&lt;rt&gt;</a> должен идти до или после тега <a href="rt">&lt;rt&gt;</a>.</blockquote>
+			<blockquote><a id="rt" href="http://htmlbook.ru/html/rt" target="_blank">&lt;rt&gt;</a> - добавляет аннотацию сверху или снизу от текста, заключенного в контейнер <a href="ruby">&lt;ruby&gt;</a>. Сама аннотация выводится уменьшенным шрифтом.
+					Такая форма записи преимущественно используется для азиатских языков вроде китайского или японского, но также может применяться для других языков, если требуется написать один текст над другим.</blockquote>
+			<blockquote><a id="ruby" href="http://htmlbook.ru/html/ruby" target="_blank">&lt;ruby&gt;</a> - предназначен для добавления небольшой аннотации сверху или снизу от заданного текста. Такая форма записи преимущественно используется для идеографической письменности вроде китайского языка, но может применяться и для других языков, если требуется написать один текст над другим.
+				Сам тег &lt;ruby&gt; выступает контейнером для тега <a href="ruby">&lt;rt&gt;</a>, он и формирует аннотацию к тексту, после которого идет; а также <a href="ruby">&lt;rp&gt;</a>, этот тег предназначен для браузеров, которые не поддерживают &lt;ruby&gt;.
+				Название тега происходит от слова «рубин», которым в типографии обозначается небольшой шрифт.</blockquote>
+
 		<hr>
 
 		<p><a id="S"></a>S</p>
 
-		 	<blockquote><a href="http://htmlbook.ru/html/section" target="_blank">&lt;section&gt;</a> - задаёт раздел документа, может применяться для блока новостей, контактной информации, глав текста, вкладок в диалоговом окне и др.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/small" target="_blank">&lt;small&gt;</a> - уменьшает размер шрифта на единицу по сравнению с обычным текстом.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/strong" target="_blank">&lt;strong&gt;</a> - предназначен для акцентирования текста. Браузеры отображают такой текст жирным начертанием.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/sup" target="_blank">&lt;sup&gt;</a> - oтображает шрифт в виде верхнего индекса. Шрифт при этом отображается выше базовой линии текста и уменьшенного размера.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/sub" target="_blank">&lt;sub&gt;</a> - oтображает шрифт в виде нижнего индекса. Текст при этом располагается ниже базовой линии остальных символов строки и уменьшенного размера.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/source" target="_blank">&lt;source&gt;</a> - вставляет звуковой или видеофайл для тегов &lt;audio&gt; и &lt;video&gt;. Обобщенно такие файлы называются медийными.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/span" target="_blank">&lt;span&gt;</a> - предназначен для определения строчных элементов документа. С помощью этого тега можно выделить часть информации внутри других тегов и установить для нее свой стиль.</blockquote>
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#s"><del>&lt;s&gt;</del></a></li>
+				<li class="fast_find_li"><a href="#samp">&lt;samp&gt;</a></li>
+				<li class="fast_find_li"><a href="#script">&lt;script&gt;</a></li>
+				<li class="fast_find_li"><a href="#section">&lt;section&gt;</a></li>
+				<li class="fast_find_li"><a href="#select">&lt;select&gt;</a></li>
+				<li class="fast_find_li"><a href="#small">&lt;small&gt;</a></li>
+				<li class="fast_find_li"><a href="#source">&lt;source&gt;</a></li>
+				<li class="fast_find_li"><a href="#span">&lt;span&gt;</a></li>
+				<li class="fast_find_li"><a href="#strike"><del>&lt;strike&gt;</del></a></li>
+				<li class="fast_find_li"><a href="#strong">&lt;strong&gt;</a></li>
+				<li class="fast_find_li"><a href="#style">&lt;style&gt;</a></li>
+				<li class="fast_find_li"><a href="#sub">&lt;sub&gt;</a></li>
+				<li class="fast_find_li"><a href="#summary">&lt;summary&gt;</a></li>
+				<li class="fast_find_li"><a href="#sup">&lt;sup&gt;</a></li>
 
+			</ul>
 
+			<blockquote><a id="s" href="http://htmlbook.ru/html/s" target="_blank"><del>&lt;s&gt;</del></a> - отображает текст как перечеркнутый. Этот тег аналогичен тегу <a href="#strike"><del>&lt;strike&gt;</del></a>, но в отличие от него имеет сокращенную форму записи подобно тегам <a href="#b">&lt;b&gt;</a>, <a href="#i">&lt;i&gt;</a> и <a href="#u">&lt;u&gt;</a>. Взамен этого тега рекомендуется использовать стили.</blockquote>
+			<blockquote><a id="samp" href="http://htmlbook.ru/html/samp" target="_blank">&lt;samp&gt;</a> - используется для отображения текста, который является результатом вывода компьютерной программы или скрипта. Браузеры обычно отображают текст в контейнере &lt;samp&gt; с помощью моноширинного шрифта. С помощью стилей можно задать свое собственное оформление.</blockquote>
+			<blockquote><a id="script" href="http://htmlbook.ru/html/script" target="_blank">&lt;script&gt;</a> - предназначен для описания скриптов, может содержать ссылку на программу или ее текст на определенном языке. Скрипты могут располагаться во внешнем файле и связываться с любым HTML-документом. Такой подход позволяет использовать одни и те же общие функции на многих веб-страницах и ускоряет их загрузку, т.к. внешний файл кэшируется при первой загрузке, и скрипт вызывается быстрее при последующих вызовах.
+					&lt;script&gt; может располагаться в заголовке или теле HTML-документа в неограниченном количестве. В большинстве случаев местоположение скрипта никак не сказывается на работу программы. Однако скрипты, которые должны выполняться в первую очередь, обычно помещают в заголовок документа.</blockquote>
+		 	<blockquote><a id="section" href="http://htmlbook.ru/html/section" target="_blank">&lt;section&gt;</a> - задаёт раздел документа, может применяться для блока новостей, контактной информации, глав текста, вкладок в диалоговом окне и др.</blockquote>
+			<blockquote><a id="select" href="http://htmlbook.ru/html/select" target="_blank">&lt;select&gt;</a> - позволяет создать элемент интерфейса в виде раскрывающегося списка, а также список с одним или множественным выбором, как показано далее. Конечный вид зависит от использования атрибута size тега &lt;select&gt;, который устанавливает высоту списка. Ширина списка определяется самым широким текстом, указанным в теге <a href="#option">&lt;option&gt;</a>, а также может изменяться с помощью стилей. Каждый пункт создается с помощью тега <a href="#option">&lt;option&gt;</a>, который должен быть вложен в контейнер &lt;select&gt;. Если планируется отправлять данные списка на сервер, то требуется поместить элемент &lt;select&gt; внутрь формы. Это также необходимо, когда к данным списка идет обращение через скрипты.</blockquote>
+			<blockquote><a id="small" href="http://htmlbook.ru/html/small" target="_blank">&lt;small&gt;</a> - уменьшает размер шрифта на единицу по сравнению с обычным текстом.</blockquote>
+			<blockquote><a id="source" href="http://htmlbook.ru/html/source" target="_blank">&lt;source&gt;</a> - вставляет звуковой или видеофайл для тегов <a href="#audio">&lt;audio&gt;</a> и <a href="#video">&lt;video&gt;</a>. Обобщенно такие файлы называются медийными.</blockquote>
+			<blockquote><a id="span" href="http://htmlbook.ru/html/span" target="_blank">&lt;span&gt;</a> - предназначен для определения строчных элементов документа. С помощью этого тега можно выделить часть информации внутри других тегов и установить для нее свой стиль.</blockquote>
+			<blockquote><a id="strike" href="http://htmlbook.ru/html/strike" target="_blank"><del>&lt;strike&gt;</del></a> - отображает текст как перечеркнутый. Этот тег аналогичен тегу <a href="#s">&lt;s&gt;</a>, который имеет сокращенную форму записи подобно тегам <a href="#b">&lt;b&gt;</a>, <a href="#i">&lt;i&gt;</a> и <a href="#u">&lt;u&gt;</a>. В любом случае, теги <del>&lt;strike&gt;</del> и <a href="#s">&lt;s&gt;</a> осуждаются спецификацией HTML, взамен них рекомендуется использовать стили.</blockquote>
+			<blockquote><a id="strong" href="http://htmlbook.ru/html/strong" target="_blank">&lt;strong&gt;</a> - предназначен для акцентирования текста. Браузеры отображают такой текст жирным начертанием.</blockquote>
+			<blockquote><a id="style" href="http://htmlbook.ru/html/style" target="_blank">&lt;style&gt;</a> - применяется для определения стилей элементов веб-страницы. Тег &lt;style&gt; необходимо использовать внутри контейнера <a href="#head">&lt;head&gt;</a>. Можно задавать более чем один тег &lt;style&gt;.</blockquote>
+			<blockquote><a id="sub" href="http://htmlbook.ru/html/sub" target="_blank">&lt;sub&gt;</a> - oтображает шрифт в виде нижнего индекса. Текст при этом располагается ниже базовой линии остальных символов строки и уменьшенного размера.</blockquote>
+			<blockquote><a id="summary" href="http://htmlbook.ru/html/summary" target="_blank">&lt;summary&gt;</a> - Указывает заголовок для тега <a href="#details">&lt;details&gt;</a>, по которому можно щелкать для разворачивания/сворачивания информации. Тег <a href="#summary">&lt;summary&gt;</a> должен идти первым внутри <a href="#details">&lt;details&gt;</a>.</blockquote>
+			<blockquote><a id="sup" href="http://htmlbook.ru/html/sup" target="_blank">&lt;sup&gt;</a> - oтображает шрифт в виде верхнего индекса. Шрифт при этом отображается выше базовой линии текста и уменьшенного размера.</blockquote>
 
 	 	<hr>
 
 		<p><a id="T"></a>T</p>
-			<blockquote><a href="http://htmlbook.ru/html/table" target="_blank">&lt;table&gt;</a> - служит контейнером для элементов, определяющих содержимое таблицы. Любая таблица состоит из строк и ячеек, которые задаются с помощью тегов &lt;tr&gt; и &lt;td&gt;. Внутри &lt;table&gt; допустимо использовать следующие элементы: &lt;caption&gt;, &lt;col&gt;, &lt;colgroup&gt;, &lt;tbody&gt;, &lt;td&gt;, &lt;tfoot&gt;, &lt;th&gt;, &lt;thead&gt; и &lt;tr&gt;.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/textarea" target="_blank">&lt;textarea&gt;</a> - представляет собой элемент формы для создания области, в которую можно вводить несколько строк текста. В отличие от тега &lt;input&gt; в текстовом поле допустимо делать переносы строк, они сохраняются при отправке данных на сервер.</blockquote>
-			<blockquote><a href="" target="_blank">&lt;thead&gt;</a> - предназначен для хранения одной или нескольких строк, которые представлены вверху таблицы. Допустимо использовать не более одного элемента &lt;thead&gt; в пределах одной таблицы, и он должен идти в исходном коде сразу после тега &lt;table&gt;.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/tr" target="_blank">&lt;tr&gt;</a> - служит контейнером для создания строки таблицы. Каждая ячейка в пределах такой строки может задаваться с помощью тега &lt;th&gt; или &lt;td&gt;.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/th" target="_blank">&lt;th&gt;</a> -  предназначен для создания одной ячейки таблицы, которая обозначается как заголовочная.</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/td" target="_blank">&lt;td&gt;</a> - Предназначен для создания одной ячейки таблицы. Тег &lt;td&gt; должен размещаться внутри контейнера &lt;tr&gt;</blockquote>
-			<blockquote><a href="http://htmlbook.ru/html/tr" target="_blank">&lt;tr&gt;</a> - служит контейнером для создания строки таблицы. Каждая ячейка в пределах такой строки может задаваться с помощью тега &lt;th&gt; или &lt;td&gt;.</blockquote>
 
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#table">&lt;table&gt;</a></li>
+				<li class="fast_find_li"><a href="#tbody">&lt;tbody&gt;</a></li>
+				<li class="fast_find_li"><a href="#td">&lt;td&gt;</a></li>
+				<li class="fast_find_li"><a href="#textarea">&lt;textarea&gt;</a></li>
+				<li class="fast_find_li"><a href="#tfoot">&lt;tfoot&gt;</a></li>
+				<li class="fast_find_li"><a href="#th">&lt;th&gt;</a></li>
+				<li class="fast_find_li"><a href="#thead">&lt;thead&gt;</a></li>
+				<li class="fast_find_li"><a href="#time">&lt;time&gt;</a></li>
+				<li class="fast_find_li"><a href="#title">&lt;title&gt;</a></li>
+				<li class="fast_find_li"><a href="#tr">&lt;tr&gt;</a></li>
+				<li class="fast_find_li"><a href="#tt"><del>&lt;tt&gt;</del></a></li>
+			</ul>
+
+			<blockquote><a id="table" href="http://htmlbook.ru/html/table" target="_blank">&lt;table&gt;</a> - служит контейнером для элементов, определяющих содержимое таблицы. Любая таблица состоит из строк и ячеек, которые задаются с помощью тегов <a href="#tr">&lt;tr&gt;</a> и <a href="#td">&lt;td&gt;</a>. Внутри &lt;table&gt; допустимо использовать следующие элементы: <a href="#caption">&lt;caption&gt;</a>, <a href="#colt">&lt;col&gt;</a>, <a href="#colgroup">&lt;colgroup&gt;</a>, <a href="#tbody">&lt;tbody&gt;</a>, <a href="#td">&lt;td&gt;</a>, <a href="tfoot">&lt;tfoot&gt;</a>, <a href="th">&lt;th&gt;</a>, <a href="thead">&lt;thead&gt;</a> и <a href="tr">&lt;tr&gt;</a>.</blockquote>
+			<blockquote><a id="tbody" href="http://htmlbook.ru/html/tbody" target="_blank">&lt;tbody&gt;</a> - предназначен для хранения одной или нескольких строк таблицы. Это позволяет создавать структурные блоки, к которым можно применять единое оформление через стили, а также управлять их видом через скрипты.
+				Допускается применять несколько тегов &lt;tbody&gt; внутри контейнера <a href="#table">&lt;table&gt;</a>. Доступны и другие виды группировок строк — <a href="#tfoot">&lt;tfoot&gt;</a> и <a href="#thead">&lt;thead&gt;</a>, ни один из них не должен перекрываться с элементом &lt;tbody&gt;.</blockquote>
+			<blockquote><a id="td" href="http://htmlbook.ru/html/td" target="_blank">&lt;td&gt;</a> - Предназначен для создания одной ячейки таблицы. Тег &lt;td&gt; должен размещаться внутри контейнера <a href="#tr">&lt;tr&gt;</a>.</blockquote>
+			<blockquote><a id="textarea" href="http://htmlbook.ru/html/textarea" target="_blank">&lt;textarea&gt;</a> - представляет собой элемент формы для создания области, в которую можно вводить несколько строк текста. В отличие от тега <a href="#input">&lt;input&gt;</a> в текстовом поле допустимо делать переносы строк, они сохраняются при отправке данных на сервер.</blockquote>
+			<blockquote><a id="tfoot" href="http://htmlbook.ru/html/tfoot" target="_blank">&lt;tfoot&gt;</a> - Элемент &lt;tfoot&gt; предназначен для хранения одной или нескольких строк, которые представлены внизу таблицы. Хотя тег &lt;tfoot&gt; в исходном коде должен быть определен до тега <a href="#tbody">&lt;tbody&gt;</a>, браузеры отображают его в самом низу таблицы.</blockquote>
+			<blockquote><a id="th" href="http://htmlbook.ru/html/th" target="_blank">&lt;th&gt;</a> -  предназначен для создания одной ячейки таблицы, которая обозначается как заголовочная.</blockquote>
+			<blockquote><a id="thead" href="http://htmlbook.ru/html/thead" target="_blank">&lt;thead&gt;</a> - предназначен для хранения одной или нескольких строк, которые представлены вверху таблицы. Допустимо использовать не более одного элемента &lt;thead&gt; в пределах одной таблицы, и он должен идти в исходном коде сразу после тега <a href="#table">&lt;table&gt;</a>.</blockquote>
+			<blockquote><a id="time" href="http://htmlbook.ru/html/time" target="_blank">&lt;time&gt;</a> - помечает текст внутри тега &lt;time&gt; как дата, время или оба значения. Может указываться непосредственно внутри контейнера &lt;time&gt;, либо задаваться через атрибут datetime.</blockquote>
+			<blockquote><a id="title" href="http://htmlbook.ru/html/title" target="_blank">&lt;title&gt;</a> - Определяет заголовок документа. Элемент &lt;title&gt; не является частью документа и не показывается напрямую на веб-странице. Допускается использовать только один тег &lt;title&gt; на документ и размещать его в контейнере <a href="#head">&lt;head&gt;</a>.</blockquote>
+			<blockquote><a id="tr" href="http://htmlbook.ru/html/tr" target="_blank">&lt;tr&gt;</a> - служит контейнером для создания строки таблицы. Каждая ячейка в пределах такой строки может задаваться с помощью тега <a href="th">&lt;th&gt;</a> или <a href="#td">&lt;td&gt;</a>.</blockquote>
+			<blockquote><a id="tt" href="http://htmlbook.ru/html/tt" target="_blank"><del>&lt;tt&gt;</del></a> - отображает текст моноширинным текстом. Этот тег относится к группе тегов физического форматирования.</blockquote>
 		<hr>
 
 		<p><a id="U"></a>U</p>
-			<blockquote><a href="http://htmlbook.ru/html/ul" target="_blank">&lt;ul&gt;</a> - устанавливает маркированный список. Каждый элемент списка должен начинаться с тега &lt;li&gt;.</blockquote>
 
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#u"><del>&lt;u&gt;</del></a></li>
+				<li class="fast_find_li"><a href="#ul">&lt;ul&gt;</a></li>
+			</ul>
+
+			<blockquote><a id="u" href="http://htmlbook.ru/html/u" target="_blank"><del>&lt;u&gt;</del></a> - добавляет подчеркивание к тексту. Этот тег устарел, взамен рекомендуется использовать стили.</blockquote>
+			<blockquote><a id="ul" href="http://htmlbook.ru/html/ul" target="_blank">&lt;ul&gt;</a> - устанавливает маркированный список. Каждый элемент списка должен начинаться с тега <a href="#li">&lt;li&gt;</a>.</blockquote>
 		<hr>
 
 		<p><a id="V"></a>V</p>
 
-		<blockquote><a href="http://htmlbook.ru/html/video" target="_blank">&lt;video&gt;</a> - добавляет, воспроизводит и управляет настройками видеоролика на веб-странице.</blockquote>
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#var">&lt;var&gt;</a></li>
+				<li class="fast_find_li"><a href="#video">&lt;video&gt;</a></li>
+			</ul>
+
+		<blockquote><a id="var" href="http://htmlbook.ru/html/video" target="_blank">&lt;&gt;</a> - используется для выделения переменных компьютерных программ. Браузеры обычно помечают текст в контейнере &lt;var&gt; курсивным начертанием.</blockquote>
+		<blockquote><a id="video" href="http://htmlbook.ru/html/video" target="_blank">&lt;video&gt;</a> - добавляет, воспроизводит и управляет настройками видеоролика на веб-странице.</blockquote>
 
 		<hr>
 
 		<p><a id="W"></a>W</p>
 
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#wbr"><del>&lt;wbr&gt;</del></a></li>
+			</ul>
+
+		<blockquote><a id="wbr" href="" target="_blank"><del>&lt;wbr&gt;</del></a> - указывает браузеру место, где допускается делать перенос строки в тексте, если этого требует ширина родительского элемента.</blockquote>
+
 		<hr>
 
 		<p><a id="X"></a>X</p>
+
+			<ul class="fast_find">
+				<li class="fast_find_li"><a href="#xmp"><del>&lt;xmp&gt;</del></a></li>
+			</ul>
+
+		<blockquote><a id="xmp" href="http://htmlbook.ru/html/xmp" target="_blank"><del>&lt;xmp&gt;</del></a> - отображает содержимое контейнера «как есть» и шрифтом фиксированной ширины. Пока тег <del>&lt;xmp&gt;</del> не закрыт, все теги внутри него отображаются как обычный текст. Этот тег устарел, используйте тег <a href="#pre">&lt;pre&gt;.</a></blockquote>
 
 		<hr>
 
