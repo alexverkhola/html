@@ -10,21 +10,26 @@
 <body>
 	<header>
 	<!--	<h2>Теги которые я выучил</h2> -->
+		<ul class="headers_ul">
+			<li class="headers_li">
+				<select class="select_source" onchange="top.location=this.value">
+					<option>Источники</option>
+					<option value="https://dev.w3.org/html5/html-author/#tags">HTML5 Reference</option>
+					<option value="https://html.spec.whatwg.org/#" class="icon-2">HTML Standart</option>
+					<option value="http://htmlbook.ru/html/">htmlbook.ru/html</option>
+				</select>
+			</li>
 
-			<select class="select_source" onchange="top.location=this.value">
-				<option>Источники</option>
-				<option value="https://dev.w3.org/html5/html-author/#tags">HTML5 Reference</option>
-				<option value="https://html.spec.whatwg.org/#" class="icon-2">HTML Standart</option>
-				<option value="http://htmlbook.ru/html/">htmlbook.ru/html</option>
-			</select>
-
-
-		<form id="find">
-			<input type="text" placeholder="Поиск">
-		</form>
+			<li class="headers_li">
+				<form id="find">
+					<input type="text" placeholder="Поиск">
+				</form>
+			</li>
+		</ul>
 
 	</header>
 
+	<main>
 		<nav>
 				<ul class="nav_ul">
 					<li><a href="#Up" id='up'>&uArr;</a></li>
@@ -61,7 +66,7 @@
 
 
 	<article>
-	<div id="div1">
+
 		<a id="Up"></a>
 		<p><a id="A"></a>A</p>
 
@@ -519,9 +524,10 @@
 
 		<hr>
 
-		</div>
+
 
 	</article>
+	</main>
 
 	<footer>
 

@@ -1,85 +1,92 @@
-a{
-	text-decoration: none;
-	font-size: 12pt;
-	color: hsl(223,93%,38%);
-}
-
-article{
-	
-}
-
 body{
 	background-color: #f2f2f2;
 	background-image: url(../img/bg2.jpg);
 
-	position: absolute;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 12pt;
 
-	top: 70px;
-
-	padding-left: 10em;
-	padding-right: 10em;
+	margin: 0 0 0 0;
 }
 
-blockquote{
+header{
+	height: 70px;
+	width: 100%;
+	margin-top: -10px;
 
+	background-color: #01bc78;
 }
 
+main{
 
+	width: 100%;
+	height: calc(100% - 70px);
+	margin-top: 0px;
+
+}
+main::after{
+    visibility: hidden;
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+article{
+
+	width: 90%;
+	height: 100%;
+	float: right;
+}
+
+nav{
+	position: fixed;
+	width: 10%;
+}
+
+@media screen and (orientation: portrait) {
+ 	nav{
+		font-size: 2em;
+	}
+}
 
 footer{
 
 	height: 40px;
 	width: 100%;
 	text-align: center;
-	position: fixed;
 	bottom: 0px;
 	left: 0px;
 	background-color: #27BC85;
 }
 
-
-h2{
-	text-align: center;
-}
-
-header{
-	height: 70px;
-	width: 100%;
-	text-align: center;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	background: #01bc78;
+form{
+	width: 150px;
 
 }
 
+a{
+	text-decoration: none;
+	font-size: 12pt;
+	color: hsl(223,93%,38%);
+}
 
 li{
 	list-style-type: none;
-
-
 }
 
 
+.select_source{
 
-nav{
-
-
+	width: 150px;
+	border-radius:5px;
+	border: 1px solid transparent;
 }
 
+#find input[type="text"]{
 
-.nav_ul{
+	width: 150px;
+	border-radius:5px;
+	border: 1px solid transparent;
 
-	left: 10px;
-	top: 70px;
-	bottom: 20px;
-	position: fixed;
-	width: 8%;
-
-	font-size: 12 em;
-	height: 100%;
 }
 
 .fast_find{
@@ -91,44 +98,18 @@ nav{
 	margin-right: 20px;
 
 }
-
-.select_source{
-
-	width: 150px;
-
-	border-radius:5px;
-	border: 1px solid transparent;
-
-	position: fixed;
-	top: 20px;
-	right: 220px;
-}
-
-
-#div1{
-
-	position: fixed;
-	top: 70px;
-	bottom: 40px;
-
-	overflow: auto;
-
+.headers_ul{
+	margin-right: 10px;
+	margin-top: 25px;
+	float: right;
 
 }
 
-#find input[type="text"]{
+.headers_li{
+	display: inline-block;
 
-	width: 150px;
-
-	position: fixed;
-	top: 20px;
-	right: 40px;
-
-	border-radius:5px;
-	border: 1px solid transparent;
 
 }
-
 
 #up, #down{
 	font-size: 20pt;
@@ -136,4 +117,8 @@ nav{
 
 .red_text{
 	color: red;
+}
+
+.nav_ul{
+	margin-top: 0px;
 }
