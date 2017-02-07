@@ -13,7 +13,7 @@ header{
 	width: 100%;
 	margin-top: -10px;
 
-	background-color: #01bc78;
+	background-color: #ef5a9c;
 }
 
 main{
@@ -40,27 +40,12 @@ article{
 nav{
 	position: fixed;
 	width: 10%;
-    font-family: BigNoodleTooOblique;
-    min-height: 70%;
-    
-
-    overflow: auto;
-   
-    
 }
 
-/*
 @media screen and (orientation: portrait) {
  	nav{
 		font-size: 2em;
 	}
-}
-*/
-@media screen and (max-height: 600px){
-    nav{
-        background-color: red;
-        height: 400px;
-    }
 }
 
 footer{
@@ -130,9 +115,7 @@ li{
 	font-size: 20pt;
 }
 
-.red_text{
-	color: red;
-}
+
 
 .nav_ul{
 	margin-top: 0px;
