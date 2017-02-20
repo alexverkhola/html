@@ -39,14 +39,8 @@ article{
 
 nav{
 	position: fixed;
-	
-    font-family: BigNoodleTooOblique;
-    
-    
-
-    overflow: auto;
-   
-    
+    font-family: BigNoodleTooOblique;  
+    overflow: auto; 
 }
 
 
