@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+	<!--	<h2>Теги которые я выучил</h2> -->
+		<ul class="headers_ul">
+			<li class="headers_li">
+                <select class="select_source" onchange="top.location=this.value">
+					<option>Вложения</option>
+                    <option value="http://www.spacelore.dp.ua/tag/">Теги</option>
+				</select>
+				<select class="select_source" onchange="top.location=this.value">
+					<option>Источники</option>
+					<option value="https://dev.w3.org/html5/html-author/#tags">HTML5 Reference</option>
+					<option value="https://html.spec.whatwg.org/#" class="icon-2">HTML Standart</option>
+					<option value="http://htmlbook.ru/html/">htmlbook.ru/html</option>
+                    <option value="http://frontender.info/a-guide-to-flexbox/">FlexBox</option>
+				</select>
+                
+			</li>
+
+			<li class="headers_li">
+				<form id="find">
+					<input type="text" placeholder="Поиск">
+				</form>
+			</li>
+		</ul>
+
+	</header>
+        
+          <section>
+                <figure class="square" id="yellow_square"></figure>
+                <figure class="square" id="blue_square"></figure>
+                <figure class="square" id="text_square"><br>Flex<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Box</figure>
+                <figure class="square" id="purple_square"></figure>
+            </section>
+        
+        <article>
+            <h2 align="center">CSS свойства применяемые к контейнеру</h2>
+            
+            
+            <dl>
+                <dt>
+                    display :
+                    <br>
+                    <i>(указываем контейнеру на то, что будем использовать flex-box)</i>
+                </dt>
+                
+                <dd>
+                    <b>flex;</b>
+                    <br>
+                    <b>inline-flex;</b>
+                </dd>
+            </dl>
+            
+            <dl>
+                <dt>
+                    flex-direction :
+                    <br>
+                    <i>(направление главной оси)</i>
+                </dt>
+                <dd>
+                    <b>column : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  сверху вниз;
+                    <br>
+                    <b>column-reverse :&nbsp; </b>  снизу вверх;
+                    <br>
+                    <b>row : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    (значение по умолчанию) : слева направо (в rtl справа налево);
+                    <br>
+                    <b>row-reverse : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  справа налево (в rtl слева направо);
+                </dd>
+            </dl>
+            
+               <dl>
+                <dt>
+                    justify-content :
+                    <br>
+                    <i>(выравнивание по главной оси)</i>
+                </dt>
+                <dd>
+                    <b>flex-start : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   (значение по умолчанию) : блоки прижаты к началу главной оси;
+                    <br>
+                    <b>flex-end : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   блоки прижаты к концу главной оси;
+                    <br>
+                    <b>center : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   блоки располагаются в центре главной оси;
+                    <br>
+                    <b>space-berween : </b>  первый блок располагается в начале главной оси, последний блок  в конце, все остальные блоки равномерно распределены в оставшемся пространстве;
+                    <br>
+                    <b>space-around : </b>&nbsp;  все блоки равномерно распределены вдоль главной оси, разделяя все свободное пространство поровну.
+                </dd>
+            </dl>
+               <dl>
+                <dt>
+                    align-items :
+                    <br>
+                    <i>(выравнивание по поперечной оси)</i>
+                </dt>
+                <dd>
+                    <b>flex-start : </b>  блоки прижаты к началу поперечной оси;
+                    <br>
+                    <b>flex-end : </b>&nbsp;&nbsp;  блоки прижаты к концу поперечной оси;
+                    <br>
+                    <b>center : </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  блоки располагаются в центре поперечной оси;
+                    <br>
+                    <b>baseline : </b>&nbsp;&nbsp;  блоки выровнены по их baseline;
+                    <br>
+                    <b>stretch : </b>&nbsp;&nbsp;&nbsp;&nbsp;  (значение по умолчанию) : блоки растянуты, занимая все доступное место по поперечной оси, при этом все же учитываются min-width/max-width, если таковые заданы.
+                </dd>
+           <h2 align="center">Многострочная организация блоков внутри flex-контейнера.</h2>
+            </dl>
+               <dl>
+                <dt>
+                    flex-wrap :
+                    <br>
+                    <i>(многострочность внутри flex-контейнера)</i>
+                </dt>
+                <dd>
+                    <b>nowrap :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>(значение по умолчанию) : блоки расположены в одну линию слева направо (в rtl справа налево);
+                    <br>
+                    <b>wrap :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>блоки расположены в несколько горизонтальных рядов (если не помещаются в один ряд). Они следуют друг за другом слева направо (в rtl справа налево);
+                    <br>
+                    <b>wrap-reverse : </b>то-же что и wrap, но блоки располагаются в обратном порядке.
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    flex-flow :
+                    <br>
+                    <i>(удобное сокращение для flex-direction + flex-wrap)</i>
+                </dt>
+                <dd>
+                    <b>flex-flow:</b> &lt;‘flex-direction’&gt; || &lt;‘flex-wrap’&gt;;
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    align-content :
+                    <br>
+                    <i>(определяет каким образом образовавшиеся ряды блоков будут выровнены по вертикали и как они поделят между собой все пространство flex-контейнера.)</i>
+                </dt>
+                <dd>
+                    <b>flex-start :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ряды блоков прижаты к началу flex-контейнера;
+                    <br>
+                    <b>flex-end :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ряды блоков прижаты к концу flex-контейнера;
+                    <br>
+                    <b>center :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ряды блоков находятся в центре flex-контейнера;
+                    <br>
+                    <b>space-between :</b> первый ряд блоков располагается в начале flex-контейнера, последний ряд блоков блок – в конце, все остальные ряды равномерно распределены в оставшемся пространстве;
+                    <br>
+                    <b>space-around :</b>&nbsp; ряды блоков равномерно распределены в от начала до конца flex-контейнера, разделяя все свободное пространство поровну;
+                    <br>
+                    <b>stretch :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  (значение по умолчанию): Ряды блоков растянуты, дабы занять все имеющееся пространство.;
+                     <br>
+                    <i>Важно: align-content работает только в многострочном режиме (т.е. в случае flex-wrap:wrap; или flex-wrap:wrap-reverse;)</i>
+                </dd>
+                
+            </dl>
+            <h2>CSS правила для дочерних элементов flex-контейнера (flex-блоков)</h2>
+            <dl>
+                <dt>
+                    flex-basis :
+                    <br>
+                    <i>(базовый размер отдельно взятого flex-блока)</i>
+                </dt>
+                <dd>
+                    Задает изначальный размер по главной оси для flex-блока до того, как к нему будут применены преобразования, основанные на других flex-факторах. Может быть задан в любых единицах измерения длинны (px, em, %, …) или auto(по умолчанию). Если задан как auto – за основу берутся размеры блока (width, height), которые, в свою очередь, могут зависеть от размера контента, если не указанны явно.
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    flex-grow : 
+                    <br>
+                    <i>(“жадность” отдельно взятого flex-блока)</i>
+                </dt>
+                <dd>
+                    Определяет то, на сколько отдельный flex-блок может быть больше соседних элементов, если это необходимо. flex-grow принимает безразмерное значение ( по умолчанию 0)
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    flex-shrink :
+                    <br>
+                    <i>(фактор “сжимаемости” отдельно взятого flex-блока)</i>
+                </dt>
+                <dd>
+                    Определяет, насколько flex-блок будет уменьшаться относительно соседних эдементов внутри flex-контейнера в случае недостатка свободного места. По умолчанию равен 1.
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    flex :
+                    <br>
+                    <i>(короткая запись для свойств flex-grow, flex-shrink и flex-basis)</i>
+                </dt>
+                <dd>
+                    <b>flex</b>: none | [ &lt;'flex-grow'&gt; &lt;'flex-shrink'&gt;? || &lt;'flex-basis'&gt; ]
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    align-self :
+                    <br>
+                    <i>(выравнивание отдельно взятого flex-блока по поперечной оси.)</i>
+                </dt>
+                <dd>
+                    <b>flex-start</b> - flex-блок прижат к началу поперечной оси;
+                    <br>
+                    <b>flex-end</b>&nbsp;&nbsp;- flex-блок прижат к началу поперечной оси;
+                    <br>
+                    <b>center</b>&nbsp;&nbsp;&nbsp;&nbsp; -  flex-блок располагаются в центре поперечной оси;
+                    <br>
+                    <b>baseline</b>&nbsp; -  flex-блок выравнен по baseline;
+                    <br>
+                    <b>stretch</b>&nbsp;&nbsp;&nbsp; - (значение по умолчанию) : flex-блок растянут, чтобы занять все доступное место по поперечной оси, при этом учитываются min-width/max-width, если таковые заданы.
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    order : число
+                    <br>
+                    <i>(порядок следования отдельно взятого flex-блока внутри flex-контейнера.)</i>
+                </dt>
+                <dd>
+                    Значение order не задает абсолютную позицию элемента в последовательности. Оно определяет вес позиции элемента.
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    margin: auto
+                    <br>
+                    <i>(центрирует блок по по вертикали и горизонтали, а в обычном, не flex случае - только по горизонтали)</i>
+                </dt>
+            </dl>
+        </article>
+        <footer>
+            Designed by olexiy86 2017
+        </footer>
+
+    </body>
+    
+</html>
