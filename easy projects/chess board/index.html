@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chess board</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="script/script.js"></script>
+    </head>
+    <style>
+        *{
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        #border{
+            height: 640px;
+            width: 640px;
+            
+            background-color: burlywood;
+            border-radius:  10px;
+            
+            border: 4px solid black;
+            margin: auto;
+            
+             display: flex;
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+        #board{
+            height: 600px;
+            width: 600px;
+            
+            border: 4px solid black;
+            margin: auto;
+            
+            display: flex;
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+        
+        .black_square, .white_square{
+            width: 75px;
+            height: 75px;
+            
+            
+        }
+        
+        .black_square{
+            background-color: dimgray;
+        }
+        
+        .white_square{
+            background-color: powderblue;
+        }
+        #leter{
+           text-align: center;
+            margin-top: 78px;
+        }
+        #number{
+            margin-left: -17px;
+            margin-top: 30px;
+        }
+    
+    </style>
+    <body>
+        <figure id = 'border'>
+            <figure id='board'>
+                <figure class="white_square">
+                    <p id="number">8</p>
+                </figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+
+                <figure class="black_square">
+                    <p id="number">7</p>
+                </figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+
+                <figure class="white_square">
+                    <p id="number">6</p>
+                </figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+
+                <figure class="black_square">
+                    <p id="number">5</p>
+                </figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+
+                <figure class="white_square">
+                    <p id="number">4</p>
+                </figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+
+                <figure class="black_square">
+                    <p id="number">3</p>
+                </figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+
+                <figure class="white_square">
+                    <p id="number">2</p>
+                </figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+                <figure class="white_square"></figure>
+                <figure class="black_square"></figure>
+
+                <figure class="black_square">
+                    <p id="number">1</p>
+                    <p id='leter' style="margin-top: 30px">A</p>
+                </figure>
+                <figure class="white_square">
+                    <p id='leter'>B</p>
+                </figure>
+                <figure class="black_square">
+                    <p id='leter'>C</p>
+                </figure>
+                <figure class="white_square">
+                    <p id='leter'>D</p>
+                </figure>
+                <figure class="black_square">
+                    <p id='leter'>E</p>
+                </figure>
+                <figure class="white_square">
+                    <p id='leter'>F</p>
+                </figure>
+                <figure class="black_square">
+                    <p id='leter'>G</p>
+                </figure>
+                <figure class="white_square">
+                    <p id='leter'>H</p>
+                </figure>
+            </figure>
+        </figure>
+    
+    
+    </body>
+    
+</html>
