@@ -13,31 +13,39 @@ class Pown{
         console.log(el);
         
         
-       document.getElementById(this.startPosition).innerHTML = `<img id="black_pown${this.startPosition}" src="img/black_pawn.png">`;    
+       document.getElementById(this.startPosition).innerHTML = `<img id="black_pown${this.startPosition}" src="img/black_pawn.png" draggable="true" ondragstart="drag(event)" ondragend="dragend(event)">`;    
     }
     
-    //moove figure on one step to forward
-    stepForward(){
+    //find alowed field to step
+    getAllowedField(){
         
-        const step = 1; // long for pown step
+        const step = "01"; // long for pown step
         
         let currentPosition = this.getCurrentPosition();
         
-  //      console.log(currentPosition);
+        console.log(currentPosition);
         
         let position = this.positionConvertorToNum(currentPosition);
         
-  //      console.log(position);
+        console.log(position);
         
-        position = position.charAt(0) + '' + (parseInt(position.charAt(1)) + step);
+        //Здесь нужно найти все возможные позиции для хода
         
-        position = this.positionConvertorToString(position);
+        let allowMoove = this.pos(position, step);
+                
+        console.log(allowMoove);
         
-        this.removeFigure(currentPosition);
+        let arrayInt = []; // массив для хранения разрешённых для хода клеток в цифровом варианте     
+        let arrayString = []; // массив для хранения разрешённых для хода клеток в строковом варианте  
         
-        this.moveFigure(position);
+        arrayInt.push(allowMoove);
         
-    //    console.log(position);
+        for(let x of arrayInt){
+            
+            arrayString.push(this.positionConvertorToString(x));
+        }
+        
+        return arrayString;
     }
     
     getCurrentPosition(){
@@ -124,16 +132,65 @@ class Pown{
        document.getElementById(position).innerHTML = `<img id="black_pown${this.startPosition}" src="img/black_pawn.png">`;
         
     }
+    
+    pos(currentPosition, step){
+        
+        let x = parseInt(currentPosition.charAt(0));
+        let y = parseInt(currentPosition.charAt(1));
+        
+        x = x + parseInt(step.charAt(0));
+        y = y + parseInt(step.charAt(1));
+        
+        return (x+''+y);
+    
+        
+    }
 }
 
-let pown = new Pown("a2", "black");
+let pow = new Pown("a2", "black");
 
-pown.onStart();
+pow.onStart();
 
-function stepForward(){
+
+/////
+/////
+///// //  there are Mistake
+
+function drag(ev){
+    ev.dataTransfer.setData("pown", ev.target.id);
     
-    pown.stepForward();
+    let arrayString = pown.getAllowedField();
     
+    for(let x of arrayString){
+        document.getElementById(x).style.border = '2px solid black' ;
+        document.getElementById(x).setAttribute("ondrop", "drop(event)");
+        document.getElementById(x).setAttribute("ondragover", "allowDrop(event)");
+    }
 }
+
+//  Когда фигура отпущена убирает border-box;
+function dragend(event){
+      let arrayString = pown.getAllowedField();
+    
+    for(let x of arrayString){
+        document.getElementById(x).style.border = 'none' ;
+    }
+}
+
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drop(event){
+    event.preventDefault();
+    var data = event.dataTransfer.getData("pown");
+    event.target.appendChild(document.getElementById(data));
+    
+    event.target.style.border = 'none';
+    event.target.removeAttribute("ondrop");
+    event.target.removeAttribute("ondragover");
+}
+
+
 
 
