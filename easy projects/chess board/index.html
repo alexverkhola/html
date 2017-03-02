@@ -4,7 +4,7 @@
         <title>Chess board</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/figure.css">
-        <script src="script/script.js"></script>
+        
     </head>
     <style>
         *{
@@ -72,120 +72,125 @@
         
         #black_pown{
             
-            position: fixed;
+            
             margin-left: 5px;
+        }
+        
+        button{
+            width: 100px;
+            height: 50px;
+            
+            margin: auto;
         }
     
     </style>
     <body>
         <figure id = 'border'>
             <figure id='board'>
-                <figure class="white_square">
+                <figure class="white_square" id='a8'>
                     <p id="number">8</p>
                 </figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square">   <img id="black_pown" src="img/black_pawn.png"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
+                <figure class="black_square" id='b8'></figure>
+                <figure class="white_square" id='c8'></figure>
+                <figure class="black_square" id='d8'></figure>
+                <figure class="white_square" id='e8'></figure>
+                <figure class="black_square" id='f8'></figure>
+                <figure class="white_square" id='g8'></figure>
+                <figure class="black_square" id='h8'></figure>
 
-                <figure class="black_square">
+                <figure class="black_square" id='a7'>
                     <p id="number">7</p>
                 </figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
+                <figure class="white_square" id='b7'></figure>
+                <figure class="black_square" id='c7'></figure>
+                <figure class="white_square" id='d7'></figure>
+                <figure class="black_square" id='e7'></figure>
+                <figure class="white_square" id='f7'></figure>
+                <figure class="black_square" id='g7'></figure>
+                <figure class="white_square" id='h7'></figure>
 
-                <figure class="white_square">
+                <figure class="white_square" id='a6'>
                     <p id="number">6</p>
                 </figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
+                <figure class="black_square" id='b6'></figure>
+                <figure class="white_square" id='c6'></figure>
+                <figure class="black_square" id='d6'></figure>
+                <figure class="white_square" id='e6'></figure>
+                <figure class="black_square" id='f6'></figure>
+                <figure class="white_square" id='g6'></figure>
+                <figure class="black_square" id='h6'></figure>
 
-                <figure class="black_square">
+                <figure class="black_square" id='a5'>
                     <p id="number">5</p>
                 </figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
+                <figure class="white_square" id='b5'></figure>
+                <figure class="black_square" id='c5'></figure>
+                <figure class="white_square" id='d5'></figure>
+                <figure class="black_square" id='e5'></figure>
+                <figure class="white_square" id='f5'></figure>
+                <figure class="black_square" id='g5'></figure>
+                <figure class="white_square" id='h5'></figure>
 
-                <figure class="white_square">
+                <figure class="white_square" id='a4'>
                     <p id="number">4</p>
                 </figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
+                <figure class="black_square" id='b4'></figure>
+                <figure class="white_square" id='c4'></figure>
+                <figure class="black_square" id='d4'></figure>
+                <figure class="white_square" id='e4'></figure>
+                <figure class="black_square" id='f4'></figure>
+                <figure class="white_square" id='g4'></figure>
+                <figure class="black_square" id='h4'></figure>
 
-                <figure class="black_square">
-                    <p id="number">3</p>
-                </figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
+                <figure class="black_square" id='a3'></figure>
+                <figure class="white_square" id='b3'></figure>
+                <figure class="black_square" id='c3'></figure>
+                <figure class="white_square" id='d3'></figure>
+                <figure class="black_square" id='e3'></figure>
+                <figure class="white_square" id='f3'></figure>
+                <figure class="black_square" id='g3'></figure>
+                <figure class="white_square" id='h3'></figure>
 
-                <figure class="white_square">
-                    <p id="number">2</p>
-                </figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
-                <figure class="white_square"></figure>
-                <figure class="black_square"></figure>
+                <figure class="white_square" id='a2'></figure>
+                <figure class="black_square" id='b2'></figure>
+                <figure class="white_square" id='c2'></figure>
+                <figure class="black_square" id='d2'></figure>
+                <figure class="white_square" id='e2'></figure>
+                <figure class="black_square" id='f2'></figure>
+                <figure class="white_square" id='g2'></figure>
+                <figure class="black_square" id='h2'></figure>
 
-                <figure class="black_square">
+                <figure class="black_square" id='a1'>
                     <p id="number">1</p>
                     <p id='leter' style="margin-top: 30px">A</p>
                 </figure>
-                <figure class="white_square">
+                <figure class="white_square" id='b1'>
                     <p id='leter'>B</p>
                 </figure>
-                <figure class="black_square">
+                <figure class="black_square" id='c1'>
                     <p id='leter'>C</p>
                 </figure>
-                <figure class="white_square">
+                <figure class="white_square" id='d1'>
                     <p id='leter'>D</p>
                 </figure>
-                <figure class="black_square">
+                <figure class="black_square" id='e1'>
                     <p id='leter'>E</p>
                 </figure>
-                <figure class="white_square">
+                <figure class="white_square" id='f1'>
                     <p id='leter'>F</p>
                 </figure>
-                <figure class="black_square">
+                <figure class="black_square" id='g1'>
                     <p id='leter'>G</p>
                 </figure>
-                <figure class="white_square">
+                <figure class="white_square" id='h1'>
                     <p id='leter'>H</p>
                 </figure>
             </figure>
         </figure>
+        
+        <button onClick="stepForward()">Step forward</button>
     
     
     </body>
-    
+    <script src="script/script.js"></script>
 </html>
