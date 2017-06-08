@@ -2,20 +2,28 @@
 <html ng-app="store">
 <head>
 	<title>Flowers store</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
 </head>
 <body>
-
-
 	<header>
 		<h1>Flowers store</h1>
 	</header>
-
 	<main ng-controller="storeController as store">
-		<div ng-repeat="product in store.product">
-			<h2>{{product.name}}</h2>
-			<img src="{{product.picture}}">
-			<p>{{product.description}}</p>
-			<h4>Price {{product.price}}</h4>
+		<nav>
+			<p><b>Catalog</b></p>
+			<ul ng-repeat="product in store.product">
+				<li><a href="#{{product.name}}">{{product.name}}</a></li>
+			</ul>
+		</nav>
+	   	<div class="container">
+			<div class="item" ng-repeat="product in store.product" ng-show="product.count">
+				<h2 id="{{product.name}}">{{product.name}}</h2>
+				<img ng-src="{{product.picture}}">
+				<p>{{product.description}}</p>
+				<div class="g-price">{{product.price}}</div>
+				<button class="basket">Купить</button>
+			</div>
 		</div>
 	</main>
 
