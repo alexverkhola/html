@@ -5,19 +5,20 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta charset="utf-8">
 </head>
-<body>
+<body ng-controller="storeController as store">
 	<header>
 		<h1>Flowers store</h1>
+		<input type="text" name="find" placeholder="find"  ng-model="searchText.name">
 	</header>
-	<main ng-controller="storeController as store">
+	<main >
 		<nav>
 			<p><b>Catalog</b></p>
-			<ul ng-repeat="product in store.product">
+			<ul ng-repeat="product in store.product" ng-show="product.count">
 				<li><a href="#{{product.name}}">{{product.name}}</a></li>
 			</ul>
 		</nav>
 	   	<div class="container">
-			<div class="item" ng-repeat="product in store.product" ng-show="product.count">
+			<div class="item" ng-repeat="product in store.product | filter : searchText" ng-show="product.count" >
 				<h2 id="{{product.name}}">{{product.name}}</h2>
 				<img ng-src="{{product.picture}}">
 				<p>{{product.description}}</p>
