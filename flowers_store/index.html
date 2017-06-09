@@ -21,6 +21,12 @@
 			<div class="item" ng-repeat="product in store.product | filter : searchText" ng-show="product.count" >
 				<h2 id="{{product.name}}">{{product.name}}</h2>
 				<img ng-src="{{product.picture}}">
+				<ul>
+					<li>Description</li>
+					<li>Specefication</li>
+					<li>Reviews</li>
+				</ul>
+				<br>
 				<p>{{product.description}}</p>
 				<div class="g-price">{{product.price}}</div>
 				<button class="basket">Купить</button>

@@ -65,6 +65,17 @@ nav>ul>li>a{
 	margin-top: 10px;
 	margin-left: 10px;
 }
+.item>ul{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+}
+.item>ul>li{
+	list-style: none;
+	border-radius: 4px;
+    background-color: #A9ADB2;
+    justify-self: center;
+}
 
 div>h4{
 	text-align: center;
