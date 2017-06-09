@@ -98,7 +98,7 @@ nav>ul>li>a{
 	grid-column: 1 / -1;
 	max-height: 80px;
 	min-height: 80px;
-	overflow-y: auto;
+	overflow: auto;
 }
 .item>div{
 	grid-row: 5 / 6;
